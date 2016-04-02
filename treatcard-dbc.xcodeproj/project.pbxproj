@@ -405,7 +405,7 @@
 		4252E2C91CB0836900F0319A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				INFOPLIST_FILE = "treatcard-dbc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.treatcard.treatcard-dbc";
@@ -416,7 +416,7 @@
 		4252E2CA1CB0836900F0319A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				INFOPLIST_FILE = "treatcard-dbc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.treatcard.treatcard-dbc";
@@ -489,6 +489,7 @@
 				4252E2CA1CB0836900F0319A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4252E2CB1CB0836900F0319A /* Build configuration list for PBXNativeTarget "treatcard-dbcTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +498,7 @@
 				4252E2CD1CB0836900F0319A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4252E2CE1CB0836900F0319A /* Build configuration list for PBXNativeTarget "treatcard-dbcUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +507,7 @@
 				4252E2D01CB0836900F0319A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
