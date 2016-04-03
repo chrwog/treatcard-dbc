@@ -17,6 +17,15 @@
 		4252E2C41CB0836900F0319A /* treatcard_dbcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4252E2C31CB0836900F0319A /* treatcard_dbcUITests.swift */; };
 		4252E2D21CB0903900F0319A /* ReceivedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4252E2D11CB0903900F0319A /* ReceivedViewController.swift */; };
 		4252E2D41CB0905800F0319A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4252E2D31CB0905800F0319A /* SettingsViewController.swift */; };
+		42B179D11CB1941500D3E79A /* PersonalizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179D01CB1941500D3E79A /* PersonalizeViewController.swift */; };
+		42B179D31CB1942100D3E79A /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179D21CB1942100D3E79A /* AddNoteViewController.swift */; };
+		42B179D51CB1942E00D3E79A /* AddTreatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179D41CB1942E00D3E79A /* AddTreatViewController.swift */; };
+		42B179D71CB1943B00D3E79A /* FriendsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179D61CB1943B00D3E79A /* FriendsListViewController.swift */; };
+		42B179D91CB1944800D3E79A /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179D81CB1944800D3E79A /* CheckoutViewController.swift */; };
+		42B179DC1CB1947700D3E79A /* SingleCardDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179DB1CB1947700D3E79A /* SingleCardDetailsViewController.swift */; };
+		42B179DF1CB194A900D3E79A /* ReceivedUnopenedCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179DE1CB194A900D3E79A /* ReceivedUnopenedCardViewController.swift */; };
+		42B179E11CB194B700D3E79A /* ReceivedMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179E01CB194B700D3E79A /* ReceivedMessageViewController.swift */; };
+		42B179E31CB194C500D3E79A /* ReceivedTreatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179E21CB194C500D3E79A /* ReceivedTreatViewController.swift */; };
 		6B417B1B72589B0059E53A83 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F9736DB50ADA34B0901652 /* Pods.framework */; };
 		868DD1FE1CB0B51200F45B61 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868DD1FD1CB0B51200F45B61 /* RegisterViewController.swift */; };
 		868DD2001CB0B69000F45B61 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868DD1FF1CB0B69000F45B61 /* loginViewController.swift */; };
@@ -57,6 +66,15 @@
 		4252E2C51CB0836900F0319A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4252E2D11CB0903900F0319A /* ReceivedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivedViewController.swift; sourceTree = "<group>"; };
 		4252E2D31CB0905800F0319A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		42B179D01CB1941500D3E79A /* PersonalizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalizeViewController.swift; sourceTree = "<group>"; };
+		42B179D21CB1942100D3E79A /* AddNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
+		42B179D41CB1942E00D3E79A /* AddTreatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTreatViewController.swift; sourceTree = "<group>"; };
+		42B179D61CB1943B00D3E79A /* FriendsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsListViewController.swift; sourceTree = "<group>"; };
+		42B179D81CB1944800D3E79A /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		42B179DB1CB1947700D3E79A /* SingleCardDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleCardDetailsViewController.swift; sourceTree = "<group>"; };
+		42B179DE1CB194A900D3E79A /* ReceivedUnopenedCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivedUnopenedCardViewController.swift; sourceTree = "<group>"; };
+		42B179E01CB194B700D3E79A /* ReceivedMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivedMessageViewController.swift; sourceTree = "<group>"; };
+		42B179E21CB194C500D3E79A /* ReceivedTreatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivedTreatViewController.swift; sourceTree = "<group>"; };
 		868DD1FD1CB0B51200F45B61 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		868DD1FF1CB0B69000F45B61 /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		868DD2011CB0B9D700F45B61 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
@@ -127,16 +145,15 @@
 			isa = PBXGroup;
 			children = (
 				4252E2A11CB0836900F0319A /* AppDelegate.swift */,
-				4252E2A31CB0836900F0319A /* CardsViewController.swift */,
-				4252E2A51CB0836900F0319A /* SentViewController.swift */,
-				4252E2D11CB0903900F0319A /* ReceivedViewController.swift */,
-				4252E2D31CB0905800F0319A /* SettingsViewController.swift */,
+				42B179DA1CB1945500D3E79A /* Cards Tab */,
+				42B179DD1CB1947B00D3E79A /* Sent Tab */,
+				42B179E41CB194C900D3E79A /* Received Tab */,
+				42B179E51CB194D300D3E79A /* Settings Tab */,
+				42B179E61CB194E200D3E79A /* Login View */,
 				4252E2A71CB0836900F0319A /* Main.storyboard */,
 				4252E2AA1CB0836900F0319A /* Assets.xcassets */,
 				4252E2AC1CB0836900F0319A /* LaunchScreen.storyboard */,
 				4252E2AF1CB0836900F0319A /* Info.plist */,
-				868DD1FD1CB0B51200F45B61 /* RegisterViewController.swift */,
-				868DD1FF1CB0B69000F45B61 /* loginViewController.swift */,
 			);
 			path = "treatcard-dbc";
 			sourceTree = "<group>";
@@ -157,6 +174,56 @@
 				4252E2C51CB0836900F0319A /* Info.plist */,
 			);
 			path = "treatcard-dbcUITests";
+			sourceTree = "<group>";
+		};
+		42B179DA1CB1945500D3E79A /* Cards Tab */ = {
+			isa = PBXGroup;
+			children = (
+				4252E2A31CB0836900F0319A /* CardsViewController.swift */,
+				42B179D01CB1941500D3E79A /* PersonalizeViewController.swift */,
+				42B179D21CB1942100D3E79A /* AddNoteViewController.swift */,
+				42B179D41CB1942E00D3E79A /* AddTreatViewController.swift */,
+				42B179D61CB1943B00D3E79A /* FriendsListViewController.swift */,
+				42B179D81CB1944800D3E79A /* CheckoutViewController.swift */,
+			);
+			name = "Cards Tab";
+			sourceTree = "<group>";
+		};
+		42B179DD1CB1947B00D3E79A /* Sent Tab */ = {
+			isa = PBXGroup;
+			children = (
+				4252E2A51CB0836900F0319A /* SentViewController.swift */,
+				42B179DB1CB1947700D3E79A /* SingleCardDetailsViewController.swift */,
+			);
+			name = "Sent Tab";
+			sourceTree = "<group>";
+		};
+		42B179E41CB194C900D3E79A /* Received Tab */ = {
+			isa = PBXGroup;
+			children = (
+				4252E2D11CB0903900F0319A /* ReceivedViewController.swift */,
+				42B179DE1CB194A900D3E79A /* ReceivedUnopenedCardViewController.swift */,
+				42B179E01CB194B700D3E79A /* ReceivedMessageViewController.swift */,
+				42B179E21CB194C500D3E79A /* ReceivedTreatViewController.swift */,
+			);
+			name = "Received Tab";
+			sourceTree = "<group>";
+		};
+		42B179E51CB194D300D3E79A /* Settings Tab */ = {
+			isa = PBXGroup;
+			children = (
+				4252E2D31CB0905800F0319A /* SettingsViewController.swift */,
+			);
+			name = "Settings Tab";
+			sourceTree = "<group>";
+		};
+		42B179E61CB194E200D3E79A /* Login View */ = {
+			isa = PBXGroup;
+			children = (
+				868DD1FD1CB0B51200F45B61 /* RegisterViewController.swift */,
+				868DD1FF1CB0B69000F45B61 /* loginViewController.swift */,
+			);
+			name = "Login View";
 			sourceTree = "<group>";
 		};
 		F82F09C8B6CA349AF944CBBD /* Frameworks */ = {
@@ -354,11 +421,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				868DD2001CB0B69000F45B61 /* loginViewController.swift in Sources */,
+				42B179DF1CB194A900D3E79A /* ReceivedUnopenedCardViewController.swift in Sources */,
 				4252E2A61CB0836900F0319A /* SentViewController.swift in Sources */,
+				42B179D31CB1942100D3E79A /* AddNoteViewController.swift in Sources */,
+				42B179D71CB1943B00D3E79A /* FriendsListViewController.swift in Sources */,
+				42B179D91CB1944800D3E79A /* CheckoutViewController.swift in Sources */,
+				42B179E31CB194C500D3E79A /* ReceivedTreatViewController.swift in Sources */,
 				4252E2D21CB0903900F0319A /* ReceivedViewController.swift in Sources */,
 				4252E2A21CB0836900F0319A /* AppDelegate.swift in Sources */,
+				42B179E11CB194B700D3E79A /* ReceivedMessageViewController.swift in Sources */,
 				868DD1FE1CB0B51200F45B61 /* RegisterViewController.swift in Sources */,
+				42B179D11CB1941500D3E79A /* PersonalizeViewController.swift in Sources */,
+				42B179D51CB1942E00D3E79A /* AddTreatViewController.swift in Sources */,
 				4252E2D41CB0905800F0319A /* SettingsViewController.swift in Sources */,
+				42B179DC1CB1947700D3E79A /* SingleCardDetailsViewController.swift in Sources */,
 				4252E2A41CB0836900F0319A /* CardsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
