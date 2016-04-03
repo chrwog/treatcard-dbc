@@ -26,10 +26,10 @@
 		42B179DF1CB194A900D3E79A /* ReceivedUnopenedCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179DE1CB194A900D3E79A /* ReceivedUnopenedCardViewController.swift */; };
 		42B179E11CB194B700D3E79A /* ReceivedMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179E01CB194B700D3E79A /* ReceivedMessageViewController.swift */; };
 		42B179E31CB194C500D3E79A /* ReceivedTreatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179E21CB194C500D3E79A /* ReceivedTreatViewController.swift */; };
-		6B417B1B72589B0059E53A83 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F9736DB50ADA34B0901652 /* Pods.framework */; };
 		868DD1FE1CB0B51200F45B61 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868DD1FD1CB0B51200F45B61 /* RegisterViewController.swift */; };
 		868DD2001CB0B69000F45B61 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868DD1FF1CB0B69000F45B61 /* loginViewController.swift */; };
 		868DD2021CB0B9D700F45B61 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 868DD2011CB0B9D700F45B61 /* Podfile */; };
+		9A00CEB6C5C95EBD6DAA5BB0 /* Pods_treatcard_dbc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C622E90FE14581A0DA9711E /* Pods_treatcard_dbc.framework */; };
 		A8AFE5C11CB19C7A00B8FC9A /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8AFE5BE1CB19C7A00B8FC9A /* 3.jpg */; };
 		A8AFE5C21CB19C7A00B8FC9A /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8AFE5BF1CB19C7A00B8FC9A /* 2.jpg */; };
 		A8AFE5C31CB19C7A00B8FC9A /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8AFE5C01CB19C7A00B8FC9A /* 1.jpg */; };
@@ -53,6 +53,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		035636EA18EB3EA0104F8557 /* Pods-treatcard-dbc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treatcard-dbc.release.xcconfig"; path = "Pods/Target Support Files/Pods-treatcard-dbc/Pods-treatcard-dbc.release.xcconfig"; sourceTree = "<group>"; };
+		10F877B361EC9287993C376F /* Pods-treatcard-dbc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treatcard-dbc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-treatcard-dbc/Pods-treatcard-dbc.debug.xcconfig"; sourceTree = "<group>"; };
+		3C622E90FE14581A0DA9711E /* Pods_treatcard_dbc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_treatcard_dbc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4252E29E1CB0836900F0319A /* treatcard-dbc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "treatcard-dbc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4252E2A11CB0836900F0319A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4252E2A31CB0836900F0319A /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
@@ -81,12 +84,9 @@
 		868DD1FD1CB0B51200F45B61 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		868DD1FF1CB0B69000F45B61 /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		868DD2011CB0B9D700F45B61 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		8AD29B67DD5BC374334FC312 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		9F6A99C44A011FE52E501426 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A8AFE5BE1CB19C7A00B8FC9A /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		A8AFE5BF1CB19C7A00B8FC9A /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		A8AFE5C01CB19C7A00B8FC9A /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
-		F1F9736DB50ADA34B0901652 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B417B1B72589B0059E53A83 /* Pods.framework in Frameworks */,
+				9A00CEB6C5C95EBD6DAA5BB0 /* Pods_treatcard_dbc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,8 +118,8 @@
 		21E38ADD10736FC1218A275D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8AD29B67DD5BC374334FC312 /* Pods.debug.xcconfig */,
-				9F6A99C44A011FE52E501426 /* Pods.release.xcconfig */,
+				10F877B361EC9287993C376F /* Pods-treatcard-dbc.debug.xcconfig */,
+				035636EA18EB3EA0104F8557 /* Pods-treatcard-dbc.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -238,7 +238,7 @@
 		F82F09C8B6CA349AF944CBBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F1F9736DB50ADA34B0901652 /* Pods.framework */,
+				3C622E90FE14581A0DA9711E /* Pods_treatcard_dbc.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -392,7 +392,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-treatcard-dbc/Pods-treatcard-dbc-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5A6F3149C21E2EC499235F5F /* Check Pods Manifest.lock */ = {
@@ -422,7 +422,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-treatcard-dbc/Pods-treatcard-dbc-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -587,7 +587,7 @@
 		};
 		4252E2C91CB0836900F0319A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8AD29B67DD5BC374334FC312 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 10F877B361EC9287993C376F /* Pods-treatcard-dbc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -602,7 +602,7 @@
 		};
 		4252E2CA1CB0836900F0319A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F6A99C44A011FE52E501426 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 035636EA18EB3EA0104F8557 /* Pods-treatcard-dbc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
