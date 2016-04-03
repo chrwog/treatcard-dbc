@@ -8,28 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4252E2A21CB0836900F0319A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4252E2A11CB0836900F0319A /* AppDelegate.swift */; };
-		4252E2A41CB0836900F0319A /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4252E2A31CB0836900F0319A /* CardsViewController.swift */; };
-		4252E2A61CB0836900F0319A /* SentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4252E2A51CB0836900F0319A /* SentViewController.swift */; };
+		4252E2A41CB0836900F0319A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4252E2A31CB0836900F0319A /* FirstViewController.swift */; };
+		4252E2A61CB0836900F0319A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4252E2A51CB0836900F0319A /* SecondViewController.swift */; };
 		4252E2A91CB0836900F0319A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4252E2A71CB0836900F0319A /* Main.storyboard */; };
 		4252E2AB1CB0836900F0319A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4252E2AA1CB0836900F0319A /* Assets.xcassets */; };
 		4252E2AE1CB0836900F0319A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4252E2AC1CB0836900F0319A /* LaunchScreen.storyboard */; };
 		4252E2B91CB0836900F0319A /* treatcard_dbcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4252E2B81CB0836900F0319A /* treatcard_dbcTests.swift */; };
 		4252E2C41CB0836900F0319A /* treatcard_dbcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4252E2C31CB0836900F0319A /* treatcard_dbcUITests.swift */; };
-		4252E2D21CB0903900F0319A /* ReceivedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4252E2D11CB0903900F0319A /* ReceivedViewController.swift */; };
-		4252E2D41CB0905800F0319A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4252E2D31CB0905800F0319A /* SettingsViewController.swift */; };
-		A824477C1CB09BCA00B6F591 /* SourceSansPro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = A82447701CB09BCA00B6F591 /* SourceSansPro-Black.otf */; };
-		A824477D1CB09BCA00B6F591 /* SourceSansPro-BlackIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = A82447711CB09BCA00B6F591 /* SourceSansPro-BlackIt.otf */; };
-		A824477E1CB09BCA00B6F591 /* SourceSansPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A82447721CB09BCA00B6F591 /* SourceSansPro-Bold.otf */; };
-		A824477F1CB09BCA00B6F591 /* SourceSansPro-BoldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = A82447731CB09BCA00B6F591 /* SourceSansPro-BoldIt.otf */; };
-		A82447801CB09BCA00B6F591 /* SourceSansPro-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = A82447741CB09BCA00B6F591 /* SourceSansPro-ExtraLight.otf */; };
-		A82447811CB09BCA00B6F591 /* SourceSansPro-ExtraLightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = A82447751CB09BCA00B6F591 /* SourceSansPro-ExtraLightIt.otf */; };
-		A82447821CB09BCA00B6F591 /* SourceSansPro-It.otf in Resources */ = {isa = PBXBuildFile; fileRef = A82447761CB09BCA00B6F591 /* SourceSansPro-It.otf */; };
-		A82447831CB09BCA00B6F591 /* SourceSansPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A82447771CB09BCA00B6F591 /* SourceSansPro-Light.otf */; };
-		A82447841CB09BCA00B6F591 /* SourceSansPro-LightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = A82447781CB09BCA00B6F591 /* SourceSansPro-LightIt.otf */; };
-		A82447851CB09BCA00B6F591 /* SourceSansPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A82447791CB09BCA00B6F591 /* SourceSansPro-Regular.otf */; };
-		A82447861CB09BCA00B6F591 /* SourceSansPro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A824477A1CB09BCA00B6F591 /* SourceSansPro-Semibold.otf */; };
-		A82447871CB09BCA00B6F591 /* SourceSansPro-SemiboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = A824477B1CB09BCA00B6F591 /* SourceSansPro-SemiboldIt.otf */; };
-		A82447881CB09BF500B6F591 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4252E2AF1CB0836900F0319A /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +37,8 @@
 /* Begin PBXFileReference section */
 		4252E29E1CB0836900F0319A /* treatcard-dbc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "treatcard-dbc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4252E2A11CB0836900F0319A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4252E2A31CB0836900F0319A /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
-		4252E2A51CB0836900F0319A /* SentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentViewController.swift; sourceTree = "<group>"; };
+		4252E2A31CB0836900F0319A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		4252E2A51CB0836900F0319A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		4252E2A81CB0836900F0319A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4252E2AA1CB0836900F0319A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4252E2AD1CB0836900F0319A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,20 +49,6 @@
 		4252E2BF1CB0836900F0319A /* treatcard-dbcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "treatcard-dbcUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4252E2C31CB0836900F0319A /* treatcard_dbcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = treatcard_dbcUITests.swift; sourceTree = "<group>"; };
 		4252E2C51CB0836900F0319A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4252E2D11CB0903900F0319A /* ReceivedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivedViewController.swift; sourceTree = "<group>"; };
-		4252E2D31CB0905800F0319A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		A82447701CB09BCA00B6F591 /* SourceSansPro-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-Black.otf"; path = "../../../Downloads/source-sans-pro/SourceSansPro-Black.otf"; sourceTree = "<group>"; };
-		A82447711CB09BCA00B6F591 /* SourceSansPro-BlackIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-BlackIt.otf"; path = "../../../Downloads/source-sans-pro/SourceSansPro-BlackIt.otf"; sourceTree = "<group>"; };
-		A82447721CB09BCA00B6F591 /* SourceSansPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-Bold.otf"; path = "../../../Downloads/source-sans-pro/SourceSansPro-Bold.otf"; sourceTree = "<group>"; };
-		A82447731CB09BCA00B6F591 /* SourceSansPro-BoldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-BoldIt.otf"; path = "../../../Downloads/source-sans-pro/SourceSansPro-BoldIt.otf"; sourceTree = "<group>"; };
-		A82447741CB09BCA00B6F591 /* SourceSansPro-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-ExtraLight.otf"; path = "../../../Downloads/source-sans-pro/SourceSansPro-ExtraLight.otf"; sourceTree = "<group>"; };
-		A82447751CB09BCA00B6F591 /* SourceSansPro-ExtraLightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-ExtraLightIt.otf"; path = "../../../Downloads/source-sans-pro/SourceSansPro-ExtraLightIt.otf"; sourceTree = "<group>"; };
-		A82447761CB09BCA00B6F591 /* SourceSansPro-It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-It.otf"; path = "../../../Downloads/source-sans-pro/SourceSansPro-It.otf"; sourceTree = "<group>"; };
-		A82447771CB09BCA00B6F591 /* SourceSansPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-Light.otf"; path = "../../../Downloads/source-sans-pro/SourceSansPro-Light.otf"; sourceTree = "<group>"; };
-		A82447781CB09BCA00B6F591 /* SourceSansPro-LightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-LightIt.otf"; path = "../../../Downloads/source-sans-pro/SourceSansPro-LightIt.otf"; sourceTree = "<group>"; };
-		A82447791CB09BCA00B6F591 /* SourceSansPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-Regular.otf"; path = "../../../Downloads/source-sans-pro/SourceSansPro-Regular.otf"; sourceTree = "<group>"; };
-		A824477A1CB09BCA00B6F591 /* SourceSansPro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-Semibold.otf"; path = "../../../Downloads/source-sans-pro/SourceSansPro-Semibold.otf"; sourceTree = "<group>"; };
-		A824477B1CB09BCA00B6F591 /* SourceSansPro-SemiboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-SemiboldIt.otf"; path = "../../../Downloads/source-sans-pro/SourceSansPro-SemiboldIt.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,25 +100,11 @@
 			isa = PBXGroup;
 			children = (
 				4252E2A11CB0836900F0319A /* AppDelegate.swift */,
-				4252E2A31CB0836900F0319A /* CardsViewController.swift */,
-				4252E2A51CB0836900F0319A /* SentViewController.swift */,
-				4252E2D11CB0903900F0319A /* ReceivedViewController.swift */,
-				4252E2D31CB0905800F0319A /* SettingsViewController.swift */,
+				4252E2A31CB0836900F0319A /* FirstViewController.swift */,
+				4252E2A51CB0836900F0319A /* SecondViewController.swift */,
 				4252E2A71CB0836900F0319A /* Main.storyboard */,
 				4252E2AA1CB0836900F0319A /* Assets.xcassets */,
 				4252E2AC1CB0836900F0319A /* LaunchScreen.storyboard */,
-				A82447701CB09BCA00B6F591 /* SourceSansPro-Black.otf */,
-				A82447711CB09BCA00B6F591 /* SourceSansPro-BlackIt.otf */,
-				A82447721CB09BCA00B6F591 /* SourceSansPro-Bold.otf */,
-				A82447731CB09BCA00B6F591 /* SourceSansPro-BoldIt.otf */,
-				A82447741CB09BCA00B6F591 /* SourceSansPro-ExtraLight.otf */,
-				A82447751CB09BCA00B6F591 /* SourceSansPro-ExtraLightIt.otf */,
-				A82447761CB09BCA00B6F591 /* SourceSansPro-It.otf */,
-				A82447771CB09BCA00B6F591 /* SourceSansPro-Light.otf */,
-				A82447781CB09BCA00B6F591 /* SourceSansPro-LightIt.otf */,
-				A82447791CB09BCA00B6F591 /* SourceSansPro-Regular.otf */,
-				A824477A1CB09BCA00B6F591 /* SourceSansPro-Semibold.otf */,
-				A824477B1CB09BCA00B6F591 /* SourceSansPro-SemiboldIt.otf */,
 				4252E2AF1CB0836900F0319A /* Info.plist */,
 			);
 			path = "treatcard-dbc";
@@ -278,22 +235,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A82447881CB09BF500B6F591 /* Info.plist in Resources */,
-				A82447861CB09BCA00B6F591 /* SourceSansPro-Semibold.otf in Resources */,
-				A82447821CB09BCA00B6F591 /* SourceSansPro-It.otf in Resources */,
 				4252E2AE1CB0836900F0319A /* LaunchScreen.storyboard in Resources */,
 				4252E2AB1CB0836900F0319A /* Assets.xcassets in Resources */,
-				A82447871CB09BCA00B6F591 /* SourceSansPro-SemiboldIt.otf in Resources */,
-				A82447851CB09BCA00B6F591 /* SourceSansPro-Regular.otf in Resources */,
-				A824477F1CB09BCA00B6F591 /* SourceSansPro-BoldIt.otf in Resources */,
-				A82447811CB09BCA00B6F591 /* SourceSansPro-ExtraLightIt.otf in Resources */,
-				A82447801CB09BCA00B6F591 /* SourceSansPro-ExtraLight.otf in Resources */,
 				4252E2A91CB0836900F0319A /* Main.storyboard in Resources */,
-				A824477C1CB09BCA00B6F591 /* SourceSansPro-Black.otf in Resources */,
-				A82447831CB09BCA00B6F591 /* SourceSansPro-Light.otf in Resources */,
-				A82447841CB09BCA00B6F591 /* SourceSansPro-LightIt.otf in Resources */,
-				A824477E1CB09BCA00B6F591 /* SourceSansPro-Bold.otf in Resources */,
-				A824477D1CB09BCA00B6F591 /* SourceSansPro-BlackIt.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,11 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4252E2A61CB0836900F0319A /* SentViewController.swift in Sources */,
-				4252E2D21CB0903900F0319A /* ReceivedViewController.swift in Sources */,
+				4252E2A61CB0836900F0319A /* SecondViewController.swift in Sources */,
 				4252E2A21CB0836900F0319A /* AppDelegate.swift in Sources */,
-				4252E2D41CB0905800F0319A /* SettingsViewController.swift in Sources */,
-				4252E2A41CB0836900F0319A /* CardsViewController.swift in Sources */,
+				4252E2A41CB0836900F0319A /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,7 +405,7 @@
 		4252E2C91CB0836900F0319A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "treatcard-dbc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.treatcard.treatcard-dbc";
@@ -474,7 +416,7 @@
 		4252E2CA1CB0836900F0319A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "treatcard-dbc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.treatcard.treatcard-dbc";
@@ -547,7 +489,6 @@
 				4252E2CA1CB0836900F0319A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		4252E2CB1CB0836900F0319A /* Build configuration list for PBXNativeTarget "treatcard-dbcTests" */ = {
 			isa = XCConfigurationList;
@@ -556,7 +497,6 @@
 				4252E2CD1CB0836900F0319A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		4252E2CE1CB0836900F0319A /* Build configuration list for PBXNativeTarget "treatcard-dbcUITests" */ = {
 			isa = XCConfigurationList;
@@ -565,7 +505,6 @@
 				4252E2D01CB0836900F0319A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
