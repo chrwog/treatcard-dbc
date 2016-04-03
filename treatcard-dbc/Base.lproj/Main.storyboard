@@ -356,7 +356,7 @@
         <scene sceneID="lT0-3z-wwy">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ut7-Dy-8wx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Cards" image="Cards" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Cards" image="icons_cards" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7av-1c-NFo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -375,7 +375,7 @@
         <scene sceneID="8sJ-yu-V8m">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w4o-UF-o7U" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Sent" image="Sent" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Sent" image="icons_sent" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="C3B-hk-ozB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -394,7 +394,7 @@
         <scene sceneID="Tpf-2r-SYH">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nK9-5N-IDx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Received" image="Received Icon" id="3Kr-3c-bJN"/>
+                    <tabBarItem key="tabBarItem" title="Received" image="icons_received" id="3Kr-3c-bJN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fX3-31-0YU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -413,7 +413,7 @@
         <scene sceneID="0UO-r5-fr3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VEd-05-z01" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" image="Settings Icon" id="YUV-Ai-zoG"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="icons_settings" id="YUV-Ai-zoG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EYT-sC-oEf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -430,9 +430,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Cards" width="30" height="30"/>
-        <image name="Received Icon" width="30" height="30"/>
-        <image name="Sent" width="30" height="30"/>
-        <image name="Settings Icon" width="30" height="30"/>
+        <image name="icons_cards" width="30" height="30"/>
+        <image name="icons_received" width="16" height="12"/>
+        <image name="icons_sent" width="16" height="12"/>
+        <image name="icons_settings" width="15" height="14"/>
     </resources>
 </document>
