@@ -1,15 +1,12 @@
 {
   "images" : [
     {
-      "idiom" : "universal"
-    },
-    {
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Sent Icon.png",
+      "filename" : "icons-cards.png",
       "scale" : "2x"
     },
     {
