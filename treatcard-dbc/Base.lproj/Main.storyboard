@@ -30,6 +30,9 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gyO-sp-zcK">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -39,6 +42,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XnY-2C-yCq"/>
+                    <connections>
+                        <outlet property="myScrollView" destination="gyO-sp-zcK" id="uaU-bL-5Bl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
