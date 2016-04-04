@@ -18,7 +18,7 @@ class CardsViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
 //        let myImages=["1.jpg", "2.jpg", "3.jpg", "1.jpg", "2.jpg", "3.jpg", "1.jpg", "2.jpg", "3.jpg", "1.jpg", "2.jpg", "3.jpg"]
-//        
+//
 //        let imageWidth:CGFloat = 275
 //        let imageHeight:CGFloat = 147
 //        var yPosition:CGFloat = 0
@@ -54,6 +54,17 @@ class CardsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let myImages=["1.jpg", "2.jpg", "3.jpg", "1.jpg", "2.jpg", "3.jpg", "1.jpg", "2.jpg", "3.jpg", "1.jpg", "2.jpg", "3.jpg"]
+        let myImage:UIImage=UIImage(named: myImages[0])!
+        
+        if segue.identifier == "Personalize" {
+            let dvc = segue.destinationViewController as! PersonalizeViewController
+            dvc.newImage = myImage
+        }
+    }
+
     
 }
 
