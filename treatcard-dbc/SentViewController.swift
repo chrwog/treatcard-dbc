@@ -7,11 +7,32 @@
 //
 
 import UIKit
+import Alamofire
 
 class SentViewController: UIViewController {
-
+    @IBOutlet weak var sentCards: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        Alamofire.request(.GET, "http://rhubarb-sundae-21254.herokuapp.com/cards/sent")
+            .responseJSON { response in
+                let cardsSent = response.2.value!
+                self.sentCards.text = String()
+                var i = 0
+                while i < cardsSent.count{
+                    if let recipient = cardsSent[i]["recipient"] {
+                        self.sentCards.text! += "\(recipient!) received:"
+                        }
+                     if let greeting = cardsSent[i]["greeting"] {
+                        self.sentCards.text! += "Greeting:\(greeting!)"
+                    }
+                     if let message = cardsSent[i]["message"] {
+                        self.sentCards.text! += "Message: \(message!) \n"
+                    }
+                    i += 1
+                    }
+//                var i = 0
+
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
 
