@@ -10,8 +10,13 @@ import UIKit
 
 class PersonalizeViewController: UIViewController {
     
+    @IBOutlet weak var label: UILabel!
+    
+    var labeltext = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        label.text = labeltext
         // Do any additional setup after loading the view, typically from a nib.
     }
     
