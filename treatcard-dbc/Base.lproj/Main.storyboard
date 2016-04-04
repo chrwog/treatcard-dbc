@@ -31,12 +31,6 @@
                                     <segue destination="q0T-8s-hn9" kind="show" identifier="template2" id="ylQ-Yp-e0u"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="91" y="363" width="195" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5E-5u-NYN">
                                 <rect key="frame" x="69" y="95" width="238" height="142"/>
                                 <state key="normal" title="Button" image="1.jpg"/>
@@ -59,7 +53,7 @@
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="klK-PP-JX6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="XnY-2C-yCq"/>
+                    <navigationItem key="navigationItem" title="Cards" id="XnY-2C-yCq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -240,7 +234,7 @@
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="85X-zg-ZFn"/>
+                    <navigationItem key="navigationItem" title="Sent" id="85X-zg-ZFn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -518,6 +512,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7av-1c-NFo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.26015521301052352" green="0.46362483734672794" blue="0.59581560863874339" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -537,6 +533,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="C3B-hk-ozB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.26230987480949641" green="0.5106363913839117" blue="0.67809227748691092" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -624,6 +621,12 @@
                                     <segue destination="R9f-iB-x58" kind="show" id="88E-Ke-tig"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRE-ZL-0ls">
+                                <rect key="frame" x="91" y="130" width="195" height="116"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -632,12 +635,12 @@
                             <constraint firstItem="nSL-mU-iNJ" firstAttribute="centerX" secondItem="pWv-Gc-y2w" secondAttribute="centerX" id="sI5-1e-EAv"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="P5M-zR-szd"/>
+                    <navigationItem key="navigationItem" title="Personalize" id="P5M-zR-szd"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o1K-hl-2bS" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1888" y="-1104"/>
+            <point key="canvasLocation" x="1887.5" y="-1104.5"/>
         </scene>
         <!--AddNote-->
         <scene sceneID="f3E-X0-hsP">
@@ -660,6 +663,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Add Note" id="FQL-KV-a0j"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f26-u7-eTU" userLabel="First Responder" sceneMemberID="firstResponder"/>
