@@ -25,6 +25,7 @@
 		42B179DF1CB194A900D3E79A /* ReceivedUnopenedCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179DE1CB194A900D3E79A /* ReceivedUnopenedCardViewController.swift */; };
 		42B179E11CB194B700D3E79A /* ReceivedMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179E01CB194B700D3E79A /* ReceivedMessageViewController.swift */; };
 		42B179E31CB194C500D3E79A /* ReceivedTreatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179E21CB194C500D3E79A /* ReceivedTreatViewController.swift */; };
+		6308F4991CB2D6CD0042C8CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6308F4981CB2D6CD0042C8CB /* Main.storyboard */; };
 		868DD1FE1CB0B51200F45B61 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868DD1FD1CB0B51200F45B61 /* RegisterViewController.swift */; };
 		868DD2001CB0B69000F45B61 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868DD1FF1CB0B69000F45B61 /* loginViewController.swift */; };
 		868DD2021CB0B9D700F45B61 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 868DD2011CB0B9D700F45B61 /* Podfile */; };
@@ -79,6 +80,7 @@
 		42B179DE1CB194A900D3E79A /* ReceivedUnopenedCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivedUnopenedCardViewController.swift; sourceTree = "<group>"; };
 		42B179E01CB194B700D3E79A /* ReceivedMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivedMessageViewController.swift; sourceTree = "<group>"; };
 		42B179E21CB194C500D3E79A /* ReceivedTreatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivedTreatViewController.swift; sourceTree = "<group>"; };
+		6308F4981CB2D6CD0042C8CB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		868DD1FD1CB0B51200F45B61 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		868DD1FF1CB0B69000F45B61 /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		868DD2011CB0B9D700F45B61 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				42B179E51CB194D300D3E79A /* Settings Tab */,
 				42B179E61CB194E200D3E79A /* Login View */,
 				4252E2AA1CB0836900F0319A /* Assets.xcassets */,
+				6308F4981CB2D6CD0042C8CB /* Main.storyboard */,
 				4252E2AC1CB0836900F0319A /* LaunchScreen.storyboard */,
 				4252E2AF1CB0836900F0319A /* Info.plist */,
 			);
@@ -350,6 +353,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6308F4991CB2D6CD0042C8CB /* Main.storyboard in Resources */,
 				A8AFE5C21CB19C7A00B8FC9A /* 2.jpg in Resources */,
 				A8AFE5C11CB19C7A00B8FC9A /* 3.jpg in Resources */,
 				4252E2AE1CB0836900F0319A /* LaunchScreen.storyboard in Resources */,
