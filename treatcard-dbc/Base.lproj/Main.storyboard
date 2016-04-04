@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A278b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hGy-oc-xTG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hGy-oc-xTG">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -25,21 +25,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amQ-S2-lBP">
-                                <rect key="frame" x="69" y="258" width="238" height="142"/>
+                                <rect key="frame" x="68" y="258" width="238" height="142"/>
                                 <state key="normal" title="Button" image="2.jpg"/>
                                 <connections>
                                     <segue destination="q0T-8s-hn9" kind="show" identifier="template2" id="ylQ-Yp-e0u"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5E-5u-NYN">
-                                <rect key="frame" x="69" y="95" width="238" height="142"/>
+                                <rect key="frame" x="68" y="95" width="238" height="142"/>
                                 <state key="normal" title="Button" image="1.jpg"/>
                                 <connections>
-                                    <segue destination="q0T-8s-hn9" kind="show" identifier="template1" id="P12-PP-Q0q"/>
+                                    <segue destination="q0T-8s-hn9" kind="show" identifier="Personalize" id="P12-PP-Q0q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SbA-ub-BCy">
-                                <rect key="frame" x="69" y="422" width="238" height="142"/>
+                                <rect key="frame" x="68" y="422" width="238" height="142"/>
                                 <state key="normal" title="Button" image="3.jpg"/>
                                 <connections>
                                     <segue destination="q0T-8s-hn9" kind="show" identifier="template3" id="oVu-WV-tjj"/>
@@ -324,7 +324,7 @@
                                 <rect key="frame" x="88" y="393" width="199" height="30"/>
                                 <state key="normal" title="I have an account. Log me in."/>
                                 <connections>
-                                    <segue destination="hGy-oc-xTG" kind="presentation" identifier="loginView" id="qRo-GU-6Ib"/>
+                                    <segue destination="hGy-oc-xTG" kind="show" id="9Gx-EF-6bx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4L-Ms-khU">
@@ -453,7 +453,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="yik-4G-yVM" kind="presentation" identifier="registerView" id="eqR-Zg-JR8"/>
+                                    <segue destination="yik-4G-yVM" kind="show" id="afM-JO-Bqa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R60-Bx-gNO">
@@ -585,7 +585,7 @@
         <!--Personalize-->
         <scene sceneID="TON-Ra-mrt">
             <objects>
-                <viewController storyboardIdentifier="template1" title="Personalize" id="q0T-8s-hn9" customClass="PersonalizeViewController" customModule="treatcard_dbc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="template1" id="q0T-8s-hn9" customClass="PersonalizeViewController" customModule="treatcard_dbc" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Dyu-dJ-qs0"/>
                         <viewControllerLayoutGuide type="bottom" id="OBN-gN-rLo"/>
@@ -608,8 +608,8 @@
                                     <segue destination="R9f-iB-x58" kind="show" id="88E-Ke-tig"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Added Note" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRE-ZL-0ls" customClass="PerzonalizeViewController">
-                                <rect key="frame" x="0.0" y="261" width="375" height="75"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Added Note" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRE-ZL-0ls" customClass="PersonalizeViewController">
+                                <rect key="frame" x="0.0" y="543" width="375" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="Xln-bw-f1b"/>
                                 </constraints>
@@ -617,6 +617,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fGE-m0-08J">
+                                <rect key="frame" x="67" y="125" width="240" height="128"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Textbox" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Z5f-D1-R1y">
+                                <rect key="frame" x="67" y="270" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -627,10 +636,14 @@
                             <constraint firstAttribute="trailing" secondItem="eRE-ZL-0ls" secondAttribute="trailing" id="sHP-jb-FI3"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Personalize" id="P5M-zR-szd"/>
+                    <navigationItem key="navigationItem" title="Personalize" id="P5M-zR-szd">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="QEx-f2-dhw"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="addNotePersonal" destination="Z5f-D1-R1y" id="KE3-Rw-bft"/>
                         <outlet property="label" destination="eRE-ZL-0ls" id="v8b-tJ-ZbN"/>
+                        <outlet property="selectedImage" destination="fGE-m0-08J" id="QJn-vc-Eyy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o1K-hl-2bS" sceneMemberID="firstResponder"/>

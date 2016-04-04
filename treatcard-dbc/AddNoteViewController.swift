@@ -23,7 +23,7 @@ class AddNoteViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var DestViewController: PersonalizeViewController = segue.destinationViewController as! PersonalizeViewController
+        let DestViewController: PersonalizeViewController = segue.destinationViewController as! PersonalizeViewController
         DestViewController.labeltext = txtfield.text
     }
 }

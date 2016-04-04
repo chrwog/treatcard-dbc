@@ -10,13 +10,17 @@ import UIKit
 
 class PersonalizeViewController: UIViewController {
     
+    @IBOutlet weak var selectedImage: UIImageView!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var addNotePersonal: UITextView!
     
     var labeltext = String()
+    var newImage: UIImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         label.text = labeltext
+        selectedImage.image = newImage
         // Do any additional setup after loading the view, typically from a nib.
     }
     
