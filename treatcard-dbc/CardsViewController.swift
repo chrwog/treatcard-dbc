@@ -21,6 +21,8 @@ class CardsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Not sure why use "dataSource" instead of "cardDataSource"
+        
         collectionView.dataSource = self
 
     }
