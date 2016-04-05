@@ -26,6 +26,11 @@
 		42B179E11CB194B700D3E79A /* ReceivedMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179E01CB194B700D3E79A /* ReceivedMessageViewController.swift */; };
 		42B179E31CB194C500D3E79A /* ReceivedTreatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179E21CB194C500D3E79A /* ReceivedTreatViewController.swift */; };
 		6308F4991CB2D6CD0042C8CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6308F4981CB2D6CD0042C8CB /* Main.storyboard */; };
+		6308F49F1CB2FB4E0042C8CB /* cardsSent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6308F49E1CB2FB4E0042C8CB /* cardsSent.swift */; };
+		6308F4B71CB32DD90042C8CB /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6308F4B41CB32DD90042C8CB /* FBSDKCoreKit.framework */; };
+		6308F4B81CB32DD90042C8CB /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6308F4B51CB32DD90042C8CB /* FBSDKLoginKit.framework */; };
+		6308F4B91CB32DD90042C8CB /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6308F4B61CB32DD90042C8CB /* FBSDKShareKit.framework */; };
+		6308F4BB1CB33E6D0042C8CB /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6308F4BA1CB33E6D0042C8CB /* SwiftyJSON.framework */; };
 		868DD1FE1CB0B51200F45B61 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868DD1FD1CB0B51200F45B61 /* RegisterViewController.swift */; };
 		868DD2001CB0B69000F45B61 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868DD1FF1CB0B69000F45B61 /* loginViewController.swift */; };
 		868DD2021CB0B9D700F45B61 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 868DD2011CB0B9D700F45B61 /* Podfile */; };
@@ -81,6 +86,11 @@
 		42B179E01CB194B700D3E79A /* ReceivedMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivedMessageViewController.swift; sourceTree = "<group>"; };
 		42B179E21CB194C500D3E79A /* ReceivedTreatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivedTreatViewController.swift; sourceTree = "<group>"; };
 		6308F4981CB2D6CD0042C8CB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6308F49E1CB2FB4E0042C8CB /* cardsSent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cardsSent.swift; sourceTree = "<group>"; };
+		6308F4B41CB32DD90042C8CB /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		6308F4B51CB32DD90042C8CB /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		6308F4B61CB32DD90042C8CB /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		6308F4BA1CB33E6D0042C8CB /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		868DD1FD1CB0B51200F45B61 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		868DD1FF1CB0B69000F45B61 /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		868DD2011CB0B9D700F45B61 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
@@ -94,7 +104,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6308F4BB1CB33E6D0042C8CB /* SwiftyJSON.framework in Frameworks */,
+				6308F4B91CB32DD90042C8CB /* FBSDKShareKit.framework in Frameworks */,
 				9A00CEB6C5C95EBD6DAA5BB0 /* Pods_treatcard_dbc.framework in Frameworks */,
+				6308F4B71CB32DD90042C8CB /* FBSDKCoreKit.framework in Frameworks */,
+				6308F4B81CB32DD90042C8CB /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +141,9 @@
 		4252E2951CB0836900F0319A = {
 			isa = PBXGroup;
 			children = (
+				6308F4B41CB32DD90042C8CB /* FBSDKCoreKit.framework */,
+				6308F4B51CB32DD90042C8CB /* FBSDKLoginKit.framework */,
+				6308F4B61CB32DD90042C8CB /* FBSDKShareKit.framework */,
 				868DD2011CB0B9D700F45B61 /* Podfile */,
 				4252E2A01CB0836900F0319A /* treatcard-dbc */,
 				4252E2B71CB0836900F0319A /* treatcard-dbcTests */,
@@ -160,6 +177,7 @@
 				6308F4981CB2D6CD0042C8CB /* Main.storyboard */,
 				4252E2AC1CB0836900F0319A /* LaunchScreen.storyboard */,
 				4252E2AF1CB0836900F0319A /* Info.plist */,
+				6308F49E1CB2FB4E0042C8CB /* cardsSent.swift */,
 			);
 			path = "treatcard-dbc";
 			sourceTree = "<group>";
@@ -238,6 +256,7 @@
 		F82F09C8B6CA349AF944CBBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6308F4BA1CB33E6D0042C8CB /* SwiftyJSON.framework */,
 				3C622E90FE14581A0DA9711E /* Pods_treatcard_dbc.framework */,
 			);
 			name = Frameworks;
@@ -447,6 +466,7 @@
 				42B179D51CB1942E00D3E79A /* AddTreatViewController.swift in Sources */,
 				4252E2D41CB0905800F0319A /* SettingsViewController.swift in Sources */,
 				42B179DC1CB1947700D3E79A /* SingleCardDetailsViewController.swift in Sources */,
+				6308F49F1CB2FB4E0042C8CB /* cardsSent.swift in Sources */,
 				4252E2A41CB0836900F0319A /* CardsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,8 +602,14 @@
 			baseConfigurationReference = 10F877B361EC9287993C376F /* Pods-treatcard-dbc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "treatcard-dbc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.treatcard.treatcard;
@@ -597,8 +623,14 @@
 			baseConfigurationReference = 035636EA18EB3EA0104F8557 /* Pods-treatcard-dbc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "treatcard-dbc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.treatcard.treatcard;
