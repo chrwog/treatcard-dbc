@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1Hk-Sw-BLP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hGy-oc-xTG">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -628,22 +628,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xp8-2f-Ute">
-                                <rect key="frame" x="150" y="537" width="75" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="add treat">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="R9f-iB-x58" kind="show" id="88E-Ke-tig"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fGE-m0-08J">
                                 <rect key="frame" x="27" y="100" width="320" height="200"/>
                             </imageView>
@@ -659,6 +643,30 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Loh-jq-EgH">
+                                <rect key="frame" x="233" y="537" width="105" height="30"/>
+                                <state key="normal" title="Pick a recipient"/>
+                                <connections>
+                                    <action selector="infoSend:" destination="q0T-8s-hn9" eventType="touchUpInside" id="AdU-tH-YAq"/>
+                                    <segue destination="cmo-D6-4rX" kind="show" id="Qs9-sB-UKl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xp8-2f-Ute">
+                                <rect key="frame" x="48" y="537" width="75" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="add treat">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="R9f-iB-x58" kind="show" id="88E-Ke-tig"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -673,7 +681,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o1K-hl-2bS" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1887.5" y="-1104.5"/>
+            <point key="canvasLocation" x="1939.5" y="-1706.5"/>
         </scene>
         <!--AddNote-->
         <scene sceneID="f3E-X0-hsP">
@@ -749,7 +757,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mqf-h5-eEH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2622.5" y="-162.5"/>
+            <point key="canvasLocation" x="2580.5" y="-126.5"/>
         </scene>
         <!--Checkout View Controller-->
         <scene sceneID="v2A-ZS-wDQ">
@@ -792,12 +800,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AYn-AV-cp6" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3204" y="-2062"/>
+            <point key="canvasLocation" x="3111.5" y="-2048.5"/>
         </scene>
         <!--Detail-->
         <scene sceneID="Jmg-mh-q6d">
             <objects>
-                <viewController title="Detail" id="xA4-Pw-3BQ" customClass="DetailViewController" customModule="ContactsFramework" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Detail" id="xA4-Pw-3BQ" customClass="DetailViewController" customModule="treatcard_dbc" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D4n-xW-Ki5"/>
                         <viewControllerLayoutGuide type="bottom" id="JCw-0g-g3t"/>
@@ -871,25 +879,10 @@
             </objects>
             <point key="canvasLocation" x="3951" y="-1303"/>
         </scene>
-        <!--Split View Controller-->
-        <scene sceneID="J9x-pz-CWY">
-            <objects>
-                <splitViewController id="1Hk-Sw-BLP" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <segue destination="cmo-D6-4rX" kind="relationship" relationship="masterViewController" id="pwU-dR-rgr"/>
-                        <segue destination="OcQ-z5-t1a" kind="relationship" relationship="detailViewController" id="CkK-Z0-etA"/>
-                    </connections>
-                </splitViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OKH-hT-OOH" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2386" y="-1762"/>
-        </scene>
         <!--Master-->
         <scene sceneID="4vK-yp-P3O">
             <objects>
-                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="Ebf-G3-RSN" customClass="MasterViewController" customModule="ContactsFramework" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="Ebf-G3-RSN" customClass="MasterViewController" customModule="treatcard_dbc" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="krI-00-DvU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -961,7 +954,6 @@
         <image name="treatsplash" width="374" height="563"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="IAs-HO-5V0"/>
-        <segue reference="CkK-Z0-etA"/>
+        <segue reference="e0W-lf-R3V"/>
     </inferredMetricsTieBreakers>
 </document>

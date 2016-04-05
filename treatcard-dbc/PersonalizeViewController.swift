@@ -13,6 +13,10 @@ class PersonalizeViewController: UIViewController {
     @IBOutlet weak var selectedImage: UIImageView!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var addNotePersonal: UITextView!
+    @IBAction func infoSend(sender: AnyObject) {
+        let text = addNotePersonal.text
+        print("\(text)")
+    }
     
     var labeltext = String()
 
@@ -31,6 +35,8 @@ class PersonalizeViewController: UIViewController {
         
         navigationItem.title = card!.templateID?.capitalizedString
         selectedImage.image = UIImage(named: card!.templateID!.lowercaseString)
+        
+        
         
         // Do any additional setup after loading the view, typically from a nib.
     }

@@ -32,10 +32,7 @@ class MasterViewController: UITableViewController, CNContactPickerDelegate {
         }
     }
 
-    override func viewWillAppear(animated: Bool) {
-        self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
-        super.viewWillAppear(animated)
-    }
+
     
     func findContacts() -> [CNContact] {
         let store = CNContactStore()
