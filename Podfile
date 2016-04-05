@@ -5,6 +5,7 @@ use_frameworks!
 
 target 'treatcard-dbc' do
 	pod 'Alamofire', '~> 2.0’
+
 end
 
 target 'treatcard-dbcTests' do
