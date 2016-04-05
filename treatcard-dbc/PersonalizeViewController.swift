@@ -15,12 +15,17 @@ class PersonalizeViewController: UIViewController {
     @IBOutlet weak var addNotePersonal: UITextView!
     
     var labeltext = String()
-    var newImage: UIImage!
+//    var newImage: UIImage!
+    var card: Card?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         label.text = labeltext
-        selectedImage.image = newImage
+//        selectedImage.image = newImage
+        
+        navigationItem.title = card!.templateID?.capitalizedString
+        selectedImage.image = UIImage(named: card!.templateID!.lowercaseString)
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
