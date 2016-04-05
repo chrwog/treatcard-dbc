@@ -7,16 +7,25 @@
 //
 
 import UIKit
+import Contacts
+import ContactsUI
 
-class PersonalizeViewController: UIViewController {
+
+class PersonalizeViewController: UIViewController  {
     
     @IBOutlet weak var selectedImage: UIImageView!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var addNotePersonal: UITextView!
     @IBAction func infoSend(sender: AnyObject) {
         let text = addNotePersonal.text
-        print("\(text)")
-    }
+        print("\(text)")}
+    
+    @IBAction func showContactsPicker(sender: UIBarButtonItem) {
+            let contactPicker = CNContactPickerViewController()
+            contactPicker.displayedPropertyKeys = [CNContactPhoneNumbersKey, CNContactEmailAddressesKey]
+            
+            self.presentViewController(contactPicker, animated: true, completion: nil)
+        }
     
     var labeltext = String()
 
@@ -46,5 +55,14 @@ class PersonalizeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func contactPicker(picker: CNContactPickerViewController, didSelectContactProperty contactProperty: CNContactProperty) {
+        let contact = contactProperty.contact
+        let phoneNumber = contactProperty.value as! CNPhoneNumber
+        
+        print(contact.givenName)
+        print(phoneNumber.stringValue)
+    }
+
     
 }
+

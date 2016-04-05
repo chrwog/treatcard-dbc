@@ -17,19 +17,22 @@ class MasterViewController: UITableViewController, CNContactPickerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        if let split = self.splitViewController {
-            let controllers = split.viewControllers
-            self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
-        }
         
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
-            self.contacts = self.findContacts()
+//        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+//            self.contacts = self.findContacts()
+//            
+//            dispatch_async(dispatch_get_main_queue()) {
+//                self.tableView!.reloadData()
+//            }
+//        }
+//
+//            Go Straight to the contact picker
+//
+            let contactPicker = CNContactPickerViewController()
+            contactPicker.delegate = self
+            contactPicker.displayedPropertyKeys = [CNContactPhoneNumbersKey, CNContactEmailAddressesKey]
             
-            dispatch_async(dispatch_get_main_queue()) {
-                self.tableView!.reloadData()
-            }
-        }
+            self.presentViewController(contactPicker, animated: true, completion: nil)
     }
 
 
@@ -94,7 +97,7 @@ class MasterViewController: UITableViewController, CNContactPickerDelegate {
     @IBAction func showContactsPicker(sender: UIBarButtonItem) {
         let contactPicker = CNContactPickerViewController()
         contactPicker.delegate = self
-        contactPicker.displayedPropertyKeys = [CNContactPhoneNumbersKey]
+        contactPicker.displayedPropertyKeys = [CNContactPhoneNumbersKey, CNContactEmailAddressesKey]
         
         self.presentViewController(contactPicker, animated: true, completion: nil)
     }
