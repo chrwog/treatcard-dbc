@@ -11,10 +11,17 @@ import UIKit
 class CardsViewController: UIViewController {
     
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    let cardDataSource = CardDataSource()
     
 //    @IBOutlet weak var myScrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
         
 //        let myImages=["1.jpg", "2.jpg", "3.jpg", "1.jpg", "2.jpg", "3.jpg", "1.jpg", "2.jpg", "3.jpg", "1.jpg", "2.jpg", "3.jpg"]
@@ -56,15 +63,67 @@ class CardsViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        let myImages=["1.jpg", "2.jpg", "3.jpg", "1.jpg", "2.jpg", "3.jpg", "1.jpg", "2.jpg", "3.jpg", "1.jpg", "2.jpg", "3.jpg"]
-        let myImage:UIImage=UIImage(named: myImages[0])!
+//        let myImages=["1.jpg", "2.jpg", "3.jpg", "1.jpg", "2.jpg", "3.jpg", "1.jpg", "2.jpg", "3.jpg", "1.jpg", "2.jpg", "3.jpg"]
+//        let myImage:UIImage=UIImage(named: myImages[0])!
+//        
+//        if segue.identifier == "Personalize" {
+//            let dvc = segue.destinationViewController as! PersonalizeViewController
+//            dvc.newImage = myImage
         
-        if segue.identifier == "Personalize" {
+        if let indexPath = getIndexPathForSelectedCell() {
+            
+            let card = cardDataSource.cardsInType(indexPath.section)[indexPath.row]
+            
             let dvc = segue.destinationViewController as! PersonalizeViewController
-            dvc.newImage = myImage
+            dvc.card = card
         }
+        
     }
-
+    
+    // MARK:- Should Perform Segue
+    
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+        return !editing
+    }
+    
+    // MARK:- Selected Cell IndexPath
+    
+    func getIndexPathForSelectedCell() -> NSIndexPath? {
+        
+        var indexPath:NSIndexPath?
+        
+        if collectionView.indexPathsForSelectedItems()!.count > 0 {
+            indexPath = collectionView.indexPathsForSelectedItems()![0]
+        }
+        return indexPath
+    }
+    
     
 }
+
+    extension CardsViewController : UICollectionViewDataSource {
+        
+        func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+            return cardDataSource.cards.count
+        }
+        
+        func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+            return cardDataSource.numbeOfRowsInEachGroup(section)
+        }
+        
+        func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CellIdentifier",forIndexPath:indexPath) as! CardCell
+            
+            let cards: [Card] = cardDataSource.cardsInType(indexPath.section)
+            let card = cards[indexPath.row]
+            
+            let templateID = card.templateID!
+            
+            cell.imageView.image = UIImage(named: templateID.lowercaseString)
+//            cell.caption.text = templateID.capitalizedString
+            
+            return cell
+        }
+    
+    }
 
