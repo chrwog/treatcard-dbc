@@ -10,18 +10,12 @@
 		4252E2A21CB0836900F0319A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4252E2A11CB0836900F0319A /* AppDelegate.swift */; };
 		4252E2A41CB0836900F0319A /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4252E2A31CB0836900F0319A /* CardsViewController.swift */; };
 		4252E2A61CB0836900F0319A /* SentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4252E2A51CB0836900F0319A /* SentViewController.swift */; };
-		4252E2A91CB0836900F0319A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4252E2A71CB0836900F0319A /* Main.storyboard */; };
 		4252E2AB1CB0836900F0319A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4252E2AA1CB0836900F0319A /* Assets.xcassets */; };
 		4252E2AE1CB0836900F0319A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4252E2AC1CB0836900F0319A /* LaunchScreen.storyboard */; };
 		4252E2B91CB0836900F0319A /* treatcard_dbcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4252E2B81CB0836900F0319A /* treatcard_dbcTests.swift */; };
 		4252E2C41CB0836900F0319A /* treatcard_dbcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4252E2C31CB0836900F0319A /* treatcard_dbcUITests.swift */; };
 		4252E2D21CB0903900F0319A /* ReceivedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4252E2D11CB0903900F0319A /* ReceivedViewController.swift */; };
 		4252E2D41CB0905800F0319A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4252E2D31CB0905800F0319A /* SettingsViewController.swift */; };
-		428CFC3D1CB323D800D52E8B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428CFC3C1CB323D800D52E8B /* Card.swift */; };
-		428CFC3F1CB3251400D52E8B /* CardDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428CFC3E1CB3251400D52E8B /* CardDataSource.swift */; };
-		428CFC411CB326AC00D52E8B /* templates.plist in Resources */ = {isa = PBXBuildFile; fileRef = 428CFC401CB326AC00D52E8B /* templates.plist */; };
-		428CFC461CB327E400D52E8B /* template.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 428CFC451CB327E400D52E8B /* template.xcassets */; };
-		428CFC481CB32DD600D52E8B /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428CFC471CB32DD600D52E8B /* CardCell.swift */; };
 		42B179D11CB1941500D3E79A /* PersonalizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179D01CB1941500D3E79A /* PersonalizeViewController.swift */; };
 		42B179D31CB1942100D3E79A /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179D21CB1942100D3E79A /* AddNoteViewController.swift */; };
 		42B179D51CB1942E00D3E79A /* AddTreatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179D41CB1942E00D3E79A /* AddTreatViewController.swift */; };
@@ -31,13 +25,19 @@
 		42B179DF1CB194A900D3E79A /* ReceivedUnopenedCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179DE1CB194A900D3E79A /* ReceivedUnopenedCardViewController.swift */; };
 		42B179E11CB194B700D3E79A /* ReceivedMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179E01CB194B700D3E79A /* ReceivedMessageViewController.swift */; };
 		42B179E31CB194C500D3E79A /* ReceivedTreatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179E21CB194C500D3E79A /* ReceivedTreatViewController.swift */; };
+		6308F4991CB2D6CD0042C8CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6308F4981CB2D6CD0042C8CB /* Main.storyboard */; };
+		6308F49F1CB2FB4E0042C8CB /* cardsSent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6308F49E1CB2FB4E0042C8CB /* cardsSent.swift */; };
+		6308F4B71CB32DD90042C8CB /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6308F4B41CB32DD90042C8CB /* FBSDKCoreKit.framework */; };
+		6308F4B81CB32DD90042C8CB /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6308F4B51CB32DD90042C8CB /* FBSDKLoginKit.framework */; };
+		6308F4B91CB32DD90042C8CB /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6308F4B61CB32DD90042C8CB /* FBSDKShareKit.framework */; };
+		6308F4BB1CB33E6D0042C8CB /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6308F4BA1CB33E6D0042C8CB /* SwiftyJSON.framework */; };
 		868DD1FE1CB0B51200F45B61 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868DD1FD1CB0B51200F45B61 /* RegisterViewController.swift */; };
 		868DD2001CB0B69000F45B61 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868DD1FF1CB0B69000F45B61 /* loginViewController.swift */; };
 		868DD2021CB0B9D700F45B61 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 868DD2011CB0B9D700F45B61 /* Podfile */; };
+		9A00CEB6C5C95EBD6DAA5BB0 /* Pods_treatcard_dbc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C622E90FE14581A0DA9711E /* Pods_treatcard_dbc.framework */; };
 		A8AFE5C11CB19C7A00B8FC9A /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8AFE5BE1CB19C7A00B8FC9A /* 3.jpg */; };
 		A8AFE5C21CB19C7A00B8FC9A /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8AFE5BF1CB19C7A00B8FC9A /* 2.jpg */; };
 		A8AFE5C31CB19C7A00B8FC9A /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8AFE5C01CB19C7A00B8FC9A /* 1.jpg */; };
-		D3A51013BE80ABC26C775E7F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE925E471D31417F137C051 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,12 +58,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3FE925E471D31417F137C051 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		035636EA18EB3EA0104F8557 /* Pods-treatcard-dbc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treatcard-dbc.release.xcconfig"; path = "Pods/Target Support Files/Pods-treatcard-dbc/Pods-treatcard-dbc.release.xcconfig"; sourceTree = "<group>"; };
+		10F877B361EC9287993C376F /* Pods-treatcard-dbc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treatcard-dbc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-treatcard-dbc/Pods-treatcard-dbc.debug.xcconfig"; sourceTree = "<group>"; };
+		3C622E90FE14581A0DA9711E /* Pods_treatcard_dbc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_treatcard_dbc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4252E29E1CB0836900F0319A /* treatcard-dbc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "treatcard-dbc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4252E2A11CB0836900F0319A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4252E2A31CB0836900F0319A /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		4252E2A51CB0836900F0319A /* SentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentViewController.swift; sourceTree = "<group>"; };
-		4252E2A81CB0836900F0319A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4252E2AA1CB0836900F0319A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4252E2AD1CB0836900F0319A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4252E2AF1CB0836900F0319A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,11 +76,6 @@
 		4252E2C51CB0836900F0319A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4252E2D11CB0903900F0319A /* ReceivedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivedViewController.swift; sourceTree = "<group>"; };
 		4252E2D31CB0905800F0319A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		428CFC3C1CB323D800D52E8B /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		428CFC3E1CB3251400D52E8B /* CardDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDataSource.swift; sourceTree = "<group>"; };
-		428CFC401CB326AC00D52E8B /* templates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = templates.plist; sourceTree = "<group>"; };
-		428CFC451CB327E400D52E8B /* template.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = template.xcassets; sourceTree = "<group>"; };
-		428CFC471CB32DD600D52E8B /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		42B179D01CB1941500D3E79A /* PersonalizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalizeViewController.swift; sourceTree = "<group>"; };
 		42B179D21CB1942100D3E79A /* AddNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
 		42B179D41CB1942E00D3E79A /* AddTreatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTreatViewController.swift; sourceTree = "<group>"; };
@@ -89,11 +85,15 @@
 		42B179DE1CB194A900D3E79A /* ReceivedUnopenedCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivedUnopenedCardViewController.swift; sourceTree = "<group>"; };
 		42B179E01CB194B700D3E79A /* ReceivedMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivedMessageViewController.swift; sourceTree = "<group>"; };
 		42B179E21CB194C500D3E79A /* ReceivedTreatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivedTreatViewController.swift; sourceTree = "<group>"; };
+		6308F4981CB2D6CD0042C8CB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6308F49E1CB2FB4E0042C8CB /* cardsSent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cardsSent.swift; sourceTree = "<group>"; };
+		6308F4B41CB32DD90042C8CB /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		6308F4B51CB32DD90042C8CB /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		6308F4B61CB32DD90042C8CB /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		6308F4BA1CB33E6D0042C8CB /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		868DD1FD1CB0B51200F45B61 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		868DD1FF1CB0B69000F45B61 /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		868DD2011CB0B9D700F45B61 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		8AD29B67DD5BC374334FC312 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		9F6A99C44A011FE52E501426 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A8AFE5BE1CB19C7A00B8FC9A /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		A8AFE5BF1CB19C7A00B8FC9A /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		A8AFE5C01CB19C7A00B8FC9A /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
@@ -104,7 +104,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3A51013BE80ABC26C775E7F /* Pods.framework in Frameworks */,
+				6308F4BB1CB33E6D0042C8CB /* SwiftyJSON.framework in Frameworks */,
+				6308F4B91CB32DD90042C8CB /* FBSDKShareKit.framework in Frameworks */,
+				9A00CEB6C5C95EBD6DAA5BB0 /* Pods_treatcard_dbc.framework in Frameworks */,
+				6308F4B71CB32DD90042C8CB /* FBSDKCoreKit.framework in Frameworks */,
+				6308F4B81CB32DD90042C8CB /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,8 +132,8 @@
 		21E38ADD10736FC1218A275D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8AD29B67DD5BC374334FC312 /* Pods.debug.xcconfig */,
-				9F6A99C44A011FE52E501426 /* Pods.release.xcconfig */,
+				10F877B361EC9287993C376F /* Pods-treatcard-dbc.debug.xcconfig */,
+				035636EA18EB3EA0104F8557 /* Pods-treatcard-dbc.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -137,6 +141,9 @@
 		4252E2951CB0836900F0319A = {
 			isa = PBXGroup;
 			children = (
+				6308F4B41CB32DD90042C8CB /* FBSDKCoreKit.framework */,
+				6308F4B51CB32DD90042C8CB /* FBSDKLoginKit.framework */,
+				6308F4B61CB32DD90042C8CB /* FBSDKShareKit.framework */,
 				868DD2011CB0B9D700F45B61 /* Podfile */,
 				4252E2A01CB0836900F0319A /* treatcard-dbc */,
 				4252E2B71CB0836900F0319A /* treatcard-dbcTests */,
@@ -160,17 +167,17 @@
 		4252E2A01CB0836900F0319A /* treatcard-dbc */ = {
 			isa = PBXGroup;
 			children = (
-				428CFC441CB327A600D52E8B /* Resources */,
 				4252E2A11CB0836900F0319A /* AppDelegate.swift */,
 				42B179DA1CB1945500D3E79A /* Cards Tab */,
 				42B179DD1CB1947B00D3E79A /* Sent Tab */,
 				42B179E41CB194C900D3E79A /* Received Tab */,
 				42B179E51CB194D300D3E79A /* Settings Tab */,
 				42B179E61CB194E200D3E79A /* Login View */,
-				4252E2A71CB0836900F0319A /* Main.storyboard */,
 				4252E2AA1CB0836900F0319A /* Assets.xcassets */,
+				6308F4981CB2D6CD0042C8CB /* Main.storyboard */,
 				4252E2AC1CB0836900F0319A /* LaunchScreen.storyboard */,
 				4252E2AF1CB0836900F0319A /* Info.plist */,
+				6308F49E1CB2FB4E0042C8CB /* cardsSent.swift */,
 			);
 			path = "treatcard-dbc";
 			sourceTree = "<group>";
@@ -193,22 +200,6 @@
 			path = "treatcard-dbcUITests";
 			sourceTree = "<group>";
 		};
-		428CFC421CB3277A00D52E8B /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "New Group";
-			sourceTree = "<group>";
-		};
-		428CFC441CB327A600D52E8B /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				428CFC401CB326AC00D52E8B /* templates.plist */,
-				428CFC451CB327E400D52E8B /* template.xcassets */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		42B179DA1CB1945500D3E79A /* Cards Tab */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,9 +212,6 @@
 				42B179D41CB1942E00D3E79A /* AddTreatViewController.swift */,
 				42B179D61CB1943B00D3E79A /* FriendsListViewController.swift */,
 				42B179D81CB1944800D3E79A /* CheckoutViewController.swift */,
-				428CFC3C1CB323D800D52E8B /* Card.swift */,
-				428CFC3E1CB3251400D52E8B /* CardDataSource.swift */,
-				428CFC471CB32DD600D52E8B /* CardCell.swift */,
 			);
 			name = "Cards Tab";
 			sourceTree = "<group>";
@@ -268,8 +256,8 @@
 		F82F09C8B6CA349AF944CBBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				428CFC421CB3277A00D52E8B /* New Group */,
-				3FE925E471D31417F137C051 /* Pods.framework */,
+				6308F4BA1CB33E6D0042C8CB /* SwiftyJSON.framework */,
+				3C622E90FE14581A0DA9711E /* Pods_treatcard_dbc.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -345,7 +333,7 @@
 				TargetAttributes = {
 					4252E29D1CB0836900F0319A = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 36XAQN7E5N;
+						DevelopmentTeam = 7EKJF3TK52;
 					};
 					4252E2B31CB0836900F0319A = {
 						CreatedOnToolsVersion = 7.3;
@@ -384,15 +372,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6308F4991CB2D6CD0042C8CB /* Main.storyboard in Resources */,
 				A8AFE5C21CB19C7A00B8FC9A /* 2.jpg in Resources */,
 				A8AFE5C11CB19C7A00B8FC9A /* 3.jpg in Resources */,
 				4252E2AE1CB0836900F0319A /* LaunchScreen.storyboard in Resources */,
 				4252E2AB1CB0836900F0319A /* Assets.xcassets in Resources */,
-				428CFC461CB327E400D52E8B /* template.xcassets in Resources */,
 				868DD2021CB0B9D700F45B61 /* Podfile in Resources */,
-				4252E2A91CB0836900F0319A /* Main.storyboard in Resources */,
 				A8AFE5C31CB19C7A00B8FC9A /* 1.jpg in Resources */,
-				428CFC411CB326AC00D52E8B /* templates.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,7 +411,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-treatcard-dbc/Pods-treatcard-dbc-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5A6F3149C21E2EC499235F5F /* Check Pods Manifest.lock */ = {
@@ -455,7 +441,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-treatcard-dbc/Pods-treatcard-dbc-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -465,7 +451,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				428CFC481CB32DD600D52E8B /* CardCell.swift in Sources */,
 				868DD2001CB0B69000F45B61 /* loginViewController.swift in Sources */,
 				42B179DF1CB194A900D3E79A /* ReceivedUnopenedCardViewController.swift in Sources */,
 				4252E2A61CB0836900F0319A /* SentViewController.swift in Sources */,
@@ -476,13 +461,12 @@
 				4252E2D21CB0903900F0319A /* ReceivedViewController.swift in Sources */,
 				4252E2A21CB0836900F0319A /* AppDelegate.swift in Sources */,
 				42B179E11CB194B700D3E79A /* ReceivedMessageViewController.swift in Sources */,
-				428CFC3F1CB3251400D52E8B /* CardDataSource.swift in Sources */,
 				868DD1FE1CB0B51200F45B61 /* RegisterViewController.swift in Sources */,
 				42B179D11CB1941500D3E79A /* PersonalizeViewController.swift in Sources */,
 				42B179D51CB1942E00D3E79A /* AddTreatViewController.swift in Sources */,
-				428CFC3D1CB323D800D52E8B /* Card.swift in Sources */,
 				4252E2D41CB0905800F0319A /* SettingsViewController.swift in Sources */,
 				42B179DC1CB1947700D3E79A /* SingleCardDetailsViewController.swift in Sources */,
+				6308F49F1CB2FB4E0042C8CB /* cardsSent.swift in Sources */,
 				4252E2A41CB0836900F0319A /* CardsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,14 +503,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4252E2A71CB0836900F0319A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4252E2A81CB0836900F0319A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4252E2AC1CB0836900F0319A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -623,14 +599,20 @@
 		};
 		4252E2C91CB0836900F0319A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8AD29B67DD5BC374334FC312 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 10F877B361EC9287993C376F /* Pods-treatcard-dbc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "treatcard-dbc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.treatcard.treatcard-dbc";
+				PRODUCT_BUNDLE_IDENTIFIER = com.treatcard.treatcard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -638,14 +620,20 @@
 		};
 		4252E2CA1CB0836900F0319A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F6A99C44A011FE52E501426 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 035636EA18EB3EA0104F8557 /* Pods-treatcard-dbc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "treatcard-dbc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.treatcard.treatcard-dbc";
+				PRODUCT_BUNDLE_IDENTIFIER = com.treatcard.treatcard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
