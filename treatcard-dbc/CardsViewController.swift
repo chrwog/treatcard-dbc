@@ -11,49 +11,18 @@ import UIKit
 class CardsViewController: UIViewController {
     
     
+    let identifier = "CellIdentifier"
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     let cardDataSource = CardDataSource()
     
-//    @IBOutlet weak var myScrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        collectionView.dataSource = self
 
-        
-        
-        // Do any additional setup after loading the view, typically from a nib.
-        
-//        let myImages=["1.jpg", "2.jpg", "3.jpg", "1.jpg", "2.jpg", "3.jpg", "1.jpg", "2.jpg", "3.jpg", "1.jpg", "2.jpg", "3.jpg"]
-//
-//        let imageWidth:CGFloat = 275
-//        let imageHeight:CGFloat = 147
-//        var yPosition:CGFloat = 0
-//        var scrollViewContentSize:CGFloat = 0;
-//        
-//        for index in 0 ..< myImages.count
-//        {
-//            let myImage:UIImage=UIImage(named: myImages[index])!
-//            let myImageView:UIImageView = UIImageView()
-//            myImageView.image = myImage
-//            
-//            myImageView.frame.size.width = imageWidth
-//            myImageView.frame.size.height = imageHeight
-//            myImageView.frame.origin.x = 10
-//            myImageView.center = self.view.center
-//            myImageView.frame.origin.y = yPosition
-//            
-//            myScrollView.addSubview(myImageView)
-//            
-//            let spacer:CGFloat = 20
-//            
-//            yPosition+=imageHeight + spacer
-//            scrollViewContentSize+=imageHeight + spacer
-//            
-//            myScrollView.contentSize = CGSize(width: imageWidth, height: scrollViewContentSize)
-//            
-//            
-//        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -62,13 +31,6 @@ class CardsViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-//        let myImages=["1.jpg", "2.jpg", "3.jpg", "1.jpg", "2.jpg", "3.jpg", "1.jpg", "2.jpg", "3.jpg", "1.jpg", "2.jpg", "3.jpg"]
-//        let myImage:UIImage=UIImage(named: myImages[0])!
-//        
-//        if segue.identifier == "Personalize" {
-//            let dvc = segue.destinationViewController as! PersonalizeViewController
-//            dvc.newImage = myImage
         
         if let indexPath = getIndexPathForSelectedCell() {
             
@@ -104,7 +66,7 @@ class CardsViewController: UIViewController {
     extension CardsViewController : UICollectionViewDataSource {
         
         func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-            return cardDataSource.cards.count
+            return cardDataSource.types.count
         }
         
         func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -112,7 +74,7 @@ class CardsViewController: UIViewController {
         }
         
         func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CellIdentifier",forIndexPath:indexPath) as! CardCell
+            let cell = collectionView.dequeueReusableCellWithReuseIdentifier(identifier,forIndexPath:indexPath) as! CardCell
             
             let cards: [Card] = cardDataSource.cardsInType(indexPath.section)
             let card = cards[indexPath.row]

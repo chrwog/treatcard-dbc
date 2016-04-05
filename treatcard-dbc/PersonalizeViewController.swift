@@ -20,8 +20,9 @@ class PersonalizeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         label.text = labeltext
-//        selectedImage.image = newImage
+
         
         navigationItem.title = card!.templateID?.capitalizedString
         selectedImage.image = UIImage(named: card!.templateID!.lowercaseString)
