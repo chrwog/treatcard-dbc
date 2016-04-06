@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>categoryID</key>
+		<string>cover4</string>
+		<key>type</key>
+		<string>You Make Me Smile</string>
+	</dict>
+	<dict>
+		<key>categoryID</key>
+		<string>cover1</string>
+		<key>type</key>
+		<string>Merry Christmas</string>
+	</dict>
+	<dict>
+		<key>categoryID</key>
+		<string>cover2</string>
+		<key>type</key>
+		<string>Happy Birthday</string>
+	</dict>
+	<dict>
+		<key>categoryID</key>
+		<string>cover3</string>
+		<key>type</key>
+		<string>All You Need Is Love</string>
+	</dict>
+</array>
+</plist>

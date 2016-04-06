@@ -10,8 +10,9 @@ import UIKit
 
 class CardsViewController: UIViewController {
     
+    var category: Category?
     
-    let identifier = "CellIdentifier"
+    let identifier = "CardCellIdentifier"
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -83,6 +84,8 @@ class CardsViewController: UIViewController {
             
             let templateID = card.templateID!
             
+            
+            navigationItem.title = category!.type?.capitalizedString
             cell.imageView.image = UIImage(named: templateID.lowercaseString)
 //            cell.caption.text = templateID.capitalizedString
             
