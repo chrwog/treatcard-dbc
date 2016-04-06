@@ -22,6 +22,9 @@
 		428CFC411CB326AC00D52E8B /* templates.plist in Resources */ = {isa = PBXBuildFile; fileRef = 428CFC401CB326AC00D52E8B /* templates.plist */; };
 		428CFC461CB327E400D52E8B /* template.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 428CFC451CB327E400D52E8B /* template.xcassets */; };
 		428CFC481CB32DD600D52E8B /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428CFC471CB32DD600D52E8B /* CardCell.swift */; };
+		428CFC4A1CB3962900D52E8B /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428CFC491CB3962900D52E8B /* MasterViewController.swift */; };
+		428CFC4C1CB3964000D52E8B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428CFC4B1CB3964000D52E8B /* DetailViewController.swift */; };
+		428CFC4E1CB46B0300D52E8B /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428CFC4D1CB46B0300D52E8B /* ContactsViewController.swift */; };
 		42B179D11CB1941500D3E79A /* PersonalizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179D01CB1941500D3E79A /* PersonalizeViewController.swift */; };
 		42B179D31CB1942100D3E79A /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179D21CB1942100D3E79A /* AddNoteViewController.swift */; };
 		42B179D51CB1942E00D3E79A /* AddTreatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179D41CB1942E00D3E79A /* AddTreatViewController.swift */; };
@@ -80,6 +83,9 @@
 		428CFC401CB326AC00D52E8B /* templates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = templates.plist; sourceTree = "<group>"; };
 		428CFC451CB327E400D52E8B /* template.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = template.xcassets; sourceTree = "<group>"; };
 		428CFC471CB32DD600D52E8B /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		428CFC491CB3962900D52E8B /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		428CFC4B1CB3964000D52E8B /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		428CFC4D1CB46B0300D52E8B /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		42B179D01CB1941500D3E79A /* PersonalizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalizeViewController.swift; sourceTree = "<group>"; };
 		42B179D21CB1942100D3E79A /* AddNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
 		42B179D41CB1942E00D3E79A /* AddTreatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTreatViewController.swift; sourceTree = "<group>"; };
@@ -220,6 +226,9 @@
 				42B179D21CB1942100D3E79A /* AddNoteViewController.swift */,
 				42B179D41CB1942E00D3E79A /* AddTreatViewController.swift */,
 				42B179D61CB1943B00D3E79A /* FriendsListViewController.swift */,
+				428CFC491CB3962900D52E8B /* MasterViewController.swift */,
+				428CFC4D1CB46B0300D52E8B /* ContactsViewController.swift */,
+				428CFC4B1CB3964000D52E8B /* DetailViewController.swift */,
 				42B179D81CB1944800D3E79A /* CheckoutViewController.swift */,
 				428CFC3C1CB323D800D52E8B /* Card.swift */,
 				428CFC3E1CB3251400D52E8B /* CardDataSource.swift */,
@@ -465,11 +474,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				428CFC4A1CB3962900D52E8B /* MasterViewController.swift in Sources */,
+				428CFC4E1CB46B0300D52E8B /* ContactsViewController.swift in Sources */,
 				428CFC481CB32DD600D52E8B /* CardCell.swift in Sources */,
 				868DD2001CB0B69000F45B61 /* loginViewController.swift in Sources */,
 				42B179DF1CB194A900D3E79A /* ReceivedUnopenedCardViewController.swift in Sources */,
 				4252E2A61CB0836900F0319A /* SentViewController.swift in Sources */,
 				42B179D31CB1942100D3E79A /* AddNoteViewController.swift in Sources */,
+				428CFC4C1CB3964000D52E8B /* DetailViewController.swift in Sources */,
 				42B179D71CB1943B00D3E79A /* FriendsListViewController.swift in Sources */,
 				42B179D91CB1944800D3E79A /* CheckoutViewController.swift in Sources */,
 				42B179E31CB194C500D3E79A /* ReceivedTreatViewController.swift in Sources */,
