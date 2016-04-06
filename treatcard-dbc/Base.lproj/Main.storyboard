@@ -28,7 +28,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardCellIdentifier" id="ZZC-XX-aOW" customClass="CardCell" customModule="treatcard_dbc" customModuleProvider="target">
-                                        <rect key="frame" x="13" y="69" width="350" height="150"/>
+                                        <rect key="frame" x="12.5" y="69" width="350" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
@@ -829,7 +829,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="5Rc-5f-wtP">
-                                        <rect key="frame" x="40" y="0.0" width="280" height="129"/>
+                                        <rect key="frame" x="39.5" y="0.0" width="280" height="129"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="280" height="129"/>
@@ -893,7 +893,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCellIdentifier" id="hOc-fA-NGP" customClass="CategoryCell" customModule="treatcard_dbc" customModuleProvider="target">
-                                        <rect key="frame" x="13" y="69" width="350" height="150"/>
+                                        <rect key="frame" x="12.5" y="69" width="350" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
