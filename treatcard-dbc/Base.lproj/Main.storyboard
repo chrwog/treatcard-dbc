@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hGy-oc-xTG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -28,7 +28,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardCellIdentifier" id="ZZC-XX-aOW" customClass="CardCell" customModule="treatcard_dbc" customModuleProvider="target">
-                                        <rect key="frame" x="13" y="69" width="350" height="150"/>
+                                        <rect key="frame" x="12.5" y="69" width="350" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
@@ -81,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="1496.5" y="-1089.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="sYK-GO-QWa">
             <objects>
-                <viewController storyboardIdentifier="Settings" id="wp3-U7-Dgc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Settings" id="wp3-U7-Dgc" customClass="SettingsViewController" customModule="treatcard_dbc" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1wN-B2-EwE"/>
                         <viewControllerLayoutGuide type="bottom" id="4x7-Cu-s3D"/>
@@ -100,11 +100,28 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TkH-HE-mfQ">
+                                <rect key="frame" x="156" y="363" width="63" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="pQI-xM-EF8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutButtonTapped:" destination="wp3-U7-Dgc" eventType="touchUpInside" id="gOv-90-Yq5"/>
+                                    <segue destination="hGy-oc-xTG" kind="presentation" identifier="loginViewFromSettings" id="1kK-JS-8k9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="TkH-HE-mfQ" firstAttribute="top" secondItem="NiF-YM-iB4" secondAttribute="bottom" constant="8" symbolic="YES" id="Evw-Kf-kTe"/>
                             <constraint firstItem="NiF-YM-iB4" firstAttribute="centerX" secondItem="EGn-uQ-KkY" secondAttribute="centerX" id="FXb-Jh-cil"/>
                             <constraint firstItem="NiF-YM-iB4" firstAttribute="centerY" secondItem="EGn-uQ-KkY" secondAttribute="centerY" id="Fo0-B8-Idv"/>
+                            <constraint firstItem="TkH-HE-mfQ" firstAttribute="centerX" secondItem="NiF-YM-iB4" secondAttribute="centerX" id="bSb-LM-w18"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8kK-nJ-l8R"/>
@@ -112,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Mc-dv-Dkz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="355" y="1124"/>
+            <point key="canvasLocation" x="206.5" y="1276.5"/>
         </scene>
         <!--Received-->
         <scene sceneID="bwI-5P-Pk1">
@@ -425,7 +442,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Sn-cT-wFm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="159.5" y="-1165.5"/>
+            <point key="canvasLocation" x="27.5" y="-1249.5"/>
         </scene>
         <!--Login-->
         <scene sceneID="1Tz-FG-i7n">
@@ -500,7 +517,7 @@
                                 </state>
                                 <connections>
                                     <action selector="loginButtonTapped:" destination="hGy-oc-xTG" eventType="touchUpInside" id="Ave-1W-vH9"/>
-                                    <segue destination="49e-Tb-3d3" kind="show" identifier="Tab Bar" id="eQR-TK-Yko"/>
+                                    <segue destination="49e-Tb-3d3" kind="show" identifier="loginToCatergories" id="RG0-tV-51s"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -557,7 +574,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zlN-wq-X6G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="555.5" y="-1125.5"/>
+            <point key="canvasLocation" x="517.5" y="-1183.5"/>
         </scene>
         <!--Sent-->
         <scene sceneID="8sJ-yu-V8m">
@@ -810,7 +827,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCellIdentifier" id="hOc-fA-NGP" customClass="CategoryCell" customModule="treatcard_dbc" customModuleProvider="target">
-                                        <rect key="frame" x="13" y="69" width="350" height="150"/>
+                                        <rect key="frame" x="12.5" y="69" width="350" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
@@ -873,5 +890,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="e0W-lf-R3V"/>
+        <segue reference="1kK-JS-8k9"/>
     </inferredMetricsTieBreakers>
 </document>

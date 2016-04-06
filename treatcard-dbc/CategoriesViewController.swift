@@ -32,6 +32,16 @@ class CategoriesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidAppear(animated: Bool) {
+        
+        let isUserLoggedIn = NSUserDefaults.standardUserDefaults().boolForKey("isUserLoggedIn");
+        if(!isUserLoggedIn) {
+            self.performSegueWithIdentifier("loginViewFromCategories", sender: self)
+        }
+        
+    }
+    
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if let indexPath = getIndexPathForSelectedCell() {

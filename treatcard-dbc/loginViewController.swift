@@ -44,22 +44,25 @@ class loginViewController: UIViewController, FBSDKLoginButtonDelegate {
         let userEmail = userEmailTextField.text;
         let userPassword = userPasswordTextField.text;
         
-        //     let userEmailStored = NSUserDefaults.standardUserDefaults().stringForKey("userEmail");
-        //     let userPasswordStored = NSUserDefaults.standardUserDefaults().stringForKey("userPassword");
+//             let userEmailStored = NSUserDefaults.standardUserDefaults().stringForKey("userEmail");
+//             let userPasswordStored = NSUserDefaults.standardUserDefaults().stringForKey("userPassword");
+        let userEmailStored = "xxx"
+        let userPasswordStored = "xxx"
+                if(userEmailStored == userEmail) {
         
-        //        if(userEmailStored == userEmail) {
-        //
-        //            if(userPasswordStored == userPassword) {
-        //                // Login successful
-        //                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn");
-        //                NSUserDefaults.standardUserDefaults().synchronize();
-        //                self.dismissViewControllerAnimated(true, completion: nil);
-        //            }
-        //        } else {
-        //
-        //            displayMyAlertMessage("Email or Password incorrect! Please try again.");
-        //
-        //        }
+                    if(userPasswordStored == userPassword) {
+                        // Login successful
+                        
+                        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn");
+                        NSUserDefaults.standardUserDefaults().synchronize();
+//                        self.dismissViewControllerAnimated(true, completion: nil);
+                        self.performSegueWithIdentifier("loginToCatergories", sender: self)
+                    }
+                } else {
+        
+                    displayMyAlertMessage("Email or Password incorrect! Please try again.");
+        
+                }
         
         print(userEmail)
         print(userPassword)
