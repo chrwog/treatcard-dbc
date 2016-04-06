@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import FBSDKLoginKit
 
-class loginViewController: UIViewController {
+
+class loginViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
@@ -16,6 +19,18 @@ class loginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Coline - facebook login button
+        if (FBSDKAccessToken.currentAccessToken() == nil) {
+            print("Not logged in..")
+        } else {
+            print("Logged in..")
+        }
+        
+        let loginButton = FBSDKLoginButton()
+        loginButton.readPermissions = ["public_profile", "email", "user_friends"]
+        loginButton.center = self.view.center
+        loginButton.delegate = self
+        self.view.addSubview(loginButton)
         
         // Do any additional setup after loading the view.
     }
@@ -29,22 +44,22 @@ class loginViewController: UIViewController {
         let userEmail = userEmailTextField.text;
         let userPassword = userPasswordTextField.text;
         
-   //     let userEmailStored = NSUserDefaults.standardUserDefaults().stringForKey("userEmail");
-   //     let userPasswordStored = NSUserDefaults.standardUserDefaults().stringForKey("userPassword");
+        //     let userEmailStored = NSUserDefaults.standardUserDefaults().stringForKey("userEmail");
+        //     let userPasswordStored = NSUserDefaults.standardUserDefaults().stringForKey("userPassword");
         
-//        if(userEmailStored == userEmail) {
-//            
-//            if(userPasswordStored == userPassword) {
-//                // Login successful
-//                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn");
-//                NSUserDefaults.standardUserDefaults().synchronize();
-//                self.dismissViewControllerAnimated(true, completion: nil);
-//            }
-//        } else {
-//            
-//            displayMyAlertMessage("Email or Password incorrect! Please try again.");
-//            
-//        }
+        //        if(userEmailStored == userEmail) {
+        //
+        //            if(userPasswordStored == userPassword) {
+        //                // Login successful
+        //                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn");
+        //                NSUserDefaults.standardUserDefaults().synchronize();
+        //                self.dismissViewControllerAnimated(true, completion: nil);
+        //            }
+        //        } else {
+        //
+        //            displayMyAlertMessage("Email or Password incorrect! Please try again.");
+        //
+        //        }
         
         print(userEmail)
         print(userPassword)
@@ -66,6 +81,18 @@ class loginViewController: UIViewController {
         
         
     }
-
+    //Coline - facebook login
+    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
+        if error == nil {
+            print("Login complete..")
+            self.performSegueWithIdentifier("Tab Bar", sender: self)
+        } else {
+            print(error.localizedDescription)
+        }
+    }
+    
+    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
+        print("User logged out..")
+    }
     
 }
