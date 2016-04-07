@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class loginViewController: UIViewController {
     
@@ -29,7 +30,31 @@ class loginViewController: UIViewController {
         let userEmail = userEmailTextField.text;
         let userPassword = userPasswordTextField.text;
         
-   //     let userEmailStored = NSUserDefaults.standardUserDefaults().stringForKey("userEmail");
+        // ALAMO FIRE HERE!!
+        
+        let parameters = ["email":userEmail!,"password":userPassword!]
+        Alamofire.request(.POST, "http://localhost:3000/sessions", parameters: parameters)
+            .responseJSON { _, _, result in
+                //let x = NSJSONSerialization.dataWithJSONObject(result, options: nil)
+                print(result)
+                //debugPrint(x["authorization"])
+                debugPrint(result)
+        }
+        
+// ----------------
+        
+        //Do my login here...
+        //If login successful:
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let appDelegate: UIApplicationDelegate = UIApplication.sharedApplication().delegate! as UIApplicationDelegate
+        self.dismissViewControllerAnimated(true, completion: nil)
+        appDelegate.window?!.rootViewController = storyboard.instantiateViewControllerWithIdentifier("mainTabBarController") as UIViewController
+        
+        
+        
+// ----------------
+        
+        //     let userEmailStored = NSUserDefaults.standardUserDefaults().stringForKey("userEmail");
    //     let userPasswordStored = NSUserDefaults.standardUserDefaults().stringForKey("userPassword");
         
 //        if(userEmailStored == userEmail) {
@@ -46,8 +71,8 @@ class loginViewController: UIViewController {
 //            
 //        }
         
-        print(userEmail)
-        print(userPassword)
+      //  print(userEmail)
+      //  print(userPassword)
         
         
     }
