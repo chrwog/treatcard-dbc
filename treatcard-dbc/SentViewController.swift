@@ -12,9 +12,11 @@ import Alamofire
 
 
 
-class SentViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class SentViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     
     @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var searchBar: UISearchBar!
     
     var cards = [tempCard]()
     
@@ -29,7 +31,8 @@ class SentViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     //what are the contents of each cell
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+//        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCellWithIdentifier("SentCell", forIndexPath: indexPath) as UITableViewCell
         cell.textLabel?.text = cards[indexPath.row].message
         
         let recipientName = cards[indexPath.row].recipient! as String
@@ -68,6 +71,7 @@ class SentViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        self.searchBar.delegate = self
         gettingSentCardData()
 
     }

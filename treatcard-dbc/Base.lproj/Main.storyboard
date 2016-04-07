@@ -130,7 +130,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ad8-vo-kcd" customClass="ReceivedCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReceivedCell" id="ad8-vo-kcd">
                                         <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ad8-vo-kcd" id="DlP-cL-71F">
@@ -252,15 +252,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CxU-WR-5Qy">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CxU-WR-5Qy">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="CwE-EZ-PRO" customClass="SentCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SentCell" id="CwE-EZ-PRO">
                                         <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CwE-EZ-PRO" id="hRk-oj-TYY">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -271,11 +271,23 @@
                                     <outlet property="delegate" destination="QS5-Rx-YEW" id="wwZ-1I-gb4"/>
                                 </connections>
                             </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="qyD-Dt-X5T">
+                                <rect key="frame" x="0.0" y="57" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qyD-Dt-X5T" secondAttribute="trailing" id="OAZ-M0-lXr"/>
+                            <constraint firstItem="qyD-Dt-X5T" firstAttribute="trailing" secondItem="CxU-WR-5Qy" secondAttribute="trailing" id="fxJ-0v-nVl"/>
+                            <constraint firstItem="qyD-Dt-X5T" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="qRb-sX-jt6"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="qyD-Dt-X5T" secondAttribute="bottom" constant="517" id="qxs-uI-cIY"/>
+                            <constraint firstItem="qyD-Dt-X5T" firstAttribute="leading" secondItem="CxU-WR-5Qy" secondAttribute="leading" id="rlR-hw-kbq"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sent" id="85X-zg-ZFn"/>
                     <connections>
+                        <outlet property="searchBar" destination="qyD-Dt-X5T" id="WJu-YD-gGs"/>
                         <outlet property="tableView" destination="CxU-WR-5Qy" id="g3S-QZ-ZxW"/>
                     </connections>
                 </viewController>

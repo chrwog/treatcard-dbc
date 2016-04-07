@@ -30,14 +30,15 @@ class ReceivedViewController: UIViewController, UITableViewDataSource, UITableVi
     
     //what are the contents of each cell
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+//        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCellWithIdentifier("ReceivedCell", forIndexPath: indexPath) as UITableViewCell
         cell.textLabel?.text = cards[indexPath.row].message
         
         //        cell.textLabel?.text = "BARON"
         return cell
     }
     
-    func gettingSentCardData() {
+    func gettingReceivedCardData() {
         
         let request = Alamofire.request(.GET, "https://rhubarb-sundae-21254.herokuapp.com/cards/sent")
         request.responseJSON{ (response) -> Void in
@@ -66,7 +67,7 @@ class ReceivedViewController: UIViewController, UITableViewDataSource, UITableVi
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        gettingSentCardData()
+        gettingReceivedCardData()
         
     }
     
