@@ -16,7 +16,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        let defaults = NSUserDefaults.standardUserDefaults()
+        if defaults.objectForKey("userEmail") == nil{
+            showLogin()
+        }
         return true
+    }
+    
+    func showLogin() {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let loginViewController = storyboard.instantiateViewControllerWithIdentifier("loginViewController") as UIViewController
+        self.window?.makeKeyAndVisible()
+        self.window?.rootViewController = loginViewController
     }
 
     func applicationWillResignActive(application: UIApplication) {
