@@ -19,6 +19,7 @@ class SentViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var searchBar: UISearchBar!
     
     var cards = [tempCard]()
+    let cardDataSource = CardDataSource()
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -35,8 +36,8 @@ class SentViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let cell = tableView.dequeueReusableCellWithIdentifier("SentCell", forIndexPath: indexPath) as UITableViewCell
         cell.textLabel?.text = cards[indexPath.row].message
         
-        let recipientName = cards[indexPath.row].recipient! as String
-        cell.detailTextLabel?.text = recipientName
+        let recipientName = cards[indexPath.row].to! as String
+        cell.detailTextLabel?.text = "To: \(recipientName)"
         
 //        cell.textLabel?.text = "BARON"
         return cell
@@ -44,28 +45,36 @@ class SentViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func gettingSentCardData() {
         
-        let request = Alamofire.request(.GET, "https://rhubarb-sundae-21254.herokuapp.com/cards/sent")
+        let request = Alamofire.request(.GET, "http://rhubarb-sundae-21254.herokuapp.com/users/1/sent")
         request.responseJSON{ (response) -> Void in
             if let value = response.2.value {
                 let json = JSON(value)
                 var i = 0
                 while i < json.count {
                     let id = String(i)
-                    let recipient = String(json[i]["recipient"])
+                    let to = String(json[i]["to"])
+                    let from = String(json[i]["from"])
                     let greeting = String(json[i]["greeting"])
                     let message = String(json[i]["message"])
-                    let card = tempCard(id: id, recipient: recipient, greeting: greeting, message: message)
+                    let occasion = String(json[i]["occasion"])
+                    
+                    let card = tempCard(id: id, to: to, from: from, greeting: greeting, message: message,
+                                        occasion: occasion)
                     print("**********")
                     self.cards.append(card)
-                    print("recipient: \(json[i]["recipient"].string!)")
-                    print("greeting: \(json[i]["message"].string!)")
-                    print("message: \(json[i]["greeting"].string!)")
+                    print(i)
+                    print("to: \(json[i]["to"].string!)")
+                    print("from: \(json[i]["from"].string!)")
+                    print("greeting: \(json[i]["greeting"].string!)")
+                    print("message: \(json[i]["message"].string!)")
+                    print("occasion: \(json[i]["occasion"].string!)")
                     self.tableView.reloadData()
                     i += 1
                 }
             }
         }
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,6 +90,10 @@ class SentViewController: UIViewController, UITableViewDataSource, UITableViewDe
         // Dispose of any resources that can be recreated.
     }
     
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+//        let selectedIndex = self.tableView.indexPathForCell(sender as! UITableViewCell)
+//        // Do your stuff with selectedIndex.row as the index
+//    }
     
     
 }

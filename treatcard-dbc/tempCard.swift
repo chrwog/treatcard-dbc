@@ -8,15 +8,18 @@
 
 class tempCard {
     var id:String?
-    var recipient:String?
+    var to:String?
+    var from:String?
     var greeting:String?
     var message:String?
+    var occasion:String?
 
-    
-    init(id: String, recipient: String, greeting:String, message: String) {
+    init(id: String, to: String, from: String, greeting: String, message: String, occasion: String) {
         self.id = id
-        self.recipient = recipient
+        self.to = to
+        self.from = from
         self.greeting = greeting
         self.message = message
+        self.occasion = occasion
     }
 }
