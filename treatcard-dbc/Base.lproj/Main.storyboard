@@ -775,7 +775,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Conect with third party app" id="U6U-IU-sPW">
+                            <tableViewSection headerTitle="Conect Social Media" id="U6U-IU-sPW">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="IjF-f7-pwA">
                                         <rect key="frame" x="0.0" y="433.5" width="375" height="44"/>
@@ -835,6 +835,7 @@
                             <outlet property="delegate" destination="Vlx-hD-lkT" id="EWD-Le-39h"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Settings" id="Rky-xc-FKq"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
             </objects>
