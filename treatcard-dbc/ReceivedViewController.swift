@@ -12,10 +12,11 @@ import Alamofire
 
 
 
-class ReceivedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ReceivedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate,UISearchBarDelegate {
     
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     var cards = [tempCard]()
     
@@ -33,6 +34,8 @@ class ReceivedViewController: UIViewController, UITableViewDataSource, UITableVi
 //        let cell = UITableViewCell()
         let cell = tableView.dequeueReusableCellWithIdentifier("ReceivedCell", forIndexPath: indexPath) as UITableViewCell
         cell.textLabel?.text = cards[indexPath.row].message
+        let recipientName = cards[indexPath.row].recipient! as String
+        cell.detailTextLabel?.text = recipientName
         
         //        cell.textLabel?.text = "BARON"
         return cell
@@ -67,6 +70,7 @@ class ReceivedViewController: UIViewController, UITableViewDataSource, UITableVi
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        self.searchBar.delegate = self
         gettingReceivedCardData()
         
     }
