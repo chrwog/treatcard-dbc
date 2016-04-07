@@ -67,6 +67,9 @@ class PersonalizeViewController: UIViewController, CNContactPickerDelegate  {
         super.viewDidLoad()
         
         
+        self.hideKeyboardWhenTappedAround()
+        
+
         // Setting TextView Border programmatically
         addNotePersonal.layer.borderColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0).CGColor
         addNotePersonal.layer.borderWidth = 2.0
