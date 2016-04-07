@@ -34,8 +34,8 @@ class ReceivedViewController: UIViewController, UITableViewDataSource, UITableVi
 //        let cell = UITableViewCell()
         let cell = tableView.dequeueReusableCellWithIdentifier("ReceivedCell", forIndexPath: indexPath) as UITableViewCell
         cell.textLabel?.text = cards[indexPath.row].message
-        let recipientName = cards[indexPath.row].recipient! as String
-        cell.detailTextLabel?.text = recipientName
+        let sendName = cards[indexPath.row].from! as String
+        cell.detailTextLabel?.text = "From: \(sendName)"
         
         //        cell.textLabel?.text = "BARON"
         return cell
@@ -43,28 +43,37 @@ class ReceivedViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func gettingReceivedCardData() {
         
-        let request = Alamofire.request(.GET, "https://rhubarb-sundae-21254.herokuapp.com/cards/sent")
+        let request = Alamofire.request(.GET, "http://rhubarb-sundae-21254.herokuapp.com/users/1/sent")
+//        let request = Alamofire.request(.GET, "http://rhubarb-sundae-21254.herokuapp.com/users/1/received")
         request.responseJSON{ (response) -> Void in
             if let value = response.2.value {
                 let json = JSON(value)
                 var i = 0
                 while i < json.count {
                     let id = String(i)
-                    let recipient = String(json[i]["recipient"])
+                    let to = String(json[i]["to"])
+                    let from = String(json[i]["from"])
                     let greeting = String(json[i]["greeting"])
                     let message = String(json[i]["message"])
-                    let card = tempCard(id: id, recipient: recipient, greeting: greeting, message: message)
+                    let occasion = String(json[i]["occasion"])
+                    
+                    let card = tempCard(id: id, to: to, from: from, greeting: greeting, message: message,
+                        occasion: occasion)
                     print("**********")
                     self.cards.append(card)
-                    print("recipient: \(json[i]["recipient"].string!)")
-                    print("greeting: \(json[i]["message"].string!)")
-                    print("message: \(json[i]["greeting"].string!)")
+                    print(i)
+                    print("to: \(json[i]["to"].string!)")
+                    print("from: \(json[i]["from"].string!)")
+                    print("greeting: \(json[i]["greeting"].string!)")
+                    print("message: \(json[i]["message"].string!)")
+                    print("occasion: \(json[i]["occasion"].string!)")
                     self.tableView.reloadData()
                     i += 1
                 }
             }
         }
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

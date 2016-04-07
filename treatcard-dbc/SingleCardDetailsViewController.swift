@@ -21,4 +21,5 @@ class SingleCardDetailsViewController: UIViewController {
     }
     
     
+    
 }
