@@ -90,6 +90,7 @@
 		868DD1FE1CB0B51200F45B61 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868DD1FD1CB0B51200F45B61 /* RegisterViewController.swift */; };
 		868DD2001CB0B69000F45B61 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868DD1FF1CB0B69000F45B61 /* loginViewController.swift */; };
 		868DD2021CB0B9D700F45B61 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 868DD2011CB0B9D700F45B61 /* Podfile */; };
+		86EC1B8C1CB622020000079A /* tempCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EC1B8B1CB622020000079A /* tempCard.swift */; };
 		AEDA05D41CB5CD04006449F7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDA05D31CB5CD04006449F7 /* User.swift */; };
 		AEDA05D61CB5CD21006449F7 /* SessionUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDA05D51CB5CD21006449F7 /* SessionUser.swift */; };
 		AEDA05D81CB5CD2E006449F7 /* UsersCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDA05D71CB5CD2E006449F7 /* UsersCards.swift */; };
@@ -206,6 +207,7 @@
 		868DD1FD1CB0B51200F45B61 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		868DD1FF1CB0B69000F45B61 /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		868DD2011CB0B9D700F45B61 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		86EC1B8B1CB622020000079A /* tempCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tempCard.swift; sourceTree = "<group>"; };
 		AEDA05D31CB5CD04006449F7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AEDA05D51CB5CD21006449F7 /* SessionUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionUser.swift; sourceTree = "<group>"; };
 		AEDA05D71CB5CD2E006449F7 /* UsersCards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersCards.swift; sourceTree = "<group>"; };
@@ -424,6 +426,7 @@
 				428CFC3C1CB323D800D52E8B /* Card.swift */,
 				428CFC3E1CB3251400D52E8B /* CardDataSource.swift */,
 				428CFC471CB32DD600D52E8B /* CardCell.swift */,
+				86EC1B8B1CB622020000079A /* tempCard.swift */,
 			);
 			name = Cards;
 			sourceTree = "<group>";
@@ -767,6 +770,7 @@
 				428CFC4E1CB46B0300D52E8B /* ContactsViewController.swift in Sources */,
 				428CFC481CB32DD600D52E8B /* CardCell.swift in Sources */,
 				428C256D1CB4BFC100137C57 /* CategoryDataSource.swift in Sources */,
+				86EC1B8C1CB622020000079A /* tempCard.swift in Sources */,
 				868DD2001CB0B69000F45B61 /* loginViewController.swift in Sources */,
 				AEDA05D41CB5CD04006449F7 /* User.swift in Sources */,
 				42B179DF1CB194A900D3E79A /* ReceivedUnopenedCardViewController.swift in Sources */,

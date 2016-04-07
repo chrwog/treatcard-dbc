@@ -17,9 +17,9 @@ class UserAuth{
         self.password = password
     }
     
-    public func check() -> {
-    
-    }
+//    public func check() -> {
+//    
+//    }
     
 
 }
