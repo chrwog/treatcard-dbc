@@ -3,21 +3,27 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>id</key>
+		<string>1</string>
 		<key>templateID</key>
 		<string>1</string>
-		<key>type</key>
+		<key>name</key>
 		<string>Greeting</string>
 	</dict>
 	<dict>
+		<key>id</key>
+		<string>2</string>
 		<key>templateID</key>
 		<string>2</string>
-		<key>type</key>
+		<key>name</key>
 		<string>Birthday</string>
 	</dict>
 	<dict>
+		<key>id</key>
+		<string>2</string>
 		<key>templateID</key>
 		<string>3</string>
-		<key>type</key>
+		<key>name</key>
 		<string>Blessing</string>
 	</dict>
 </array>

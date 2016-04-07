@@ -15,7 +15,7 @@ class CardDataSource {
     }
     
     var cards:[Card] = []
-    var types:[String] = []
+    var names:[String] = []
     
     
     func numbeOfRowsInEachGroup(index: Int) -> Int {
@@ -23,11 +23,11 @@ class CardDataSource {
     }
     
     func numberOfGroups() -> Int {
-        return types.count
+        return names.count
     }
     
     func gettGroupLabelAtIndex(index: Int) -> String {
-        return types[index]
+        return names[index]
     }
     
     // MARK:- Populate Data from plist
@@ -37,12 +37,13 @@ class CardDataSource {
             if let dictArray = NSArray(contentsOfFile: path) {
                 for item in dictArray {
                     if let dict = item as? NSDictionary {
+                        let id = dict["id"] as! String
+                        let name = dict["name"] as! String
                         let templateID = dict["templateID"] as! String
-                        let type = dict["type"] as! String
                         
-                        let card = Card(templateID: templateID, type: type)
-                        if !types.contains(type){
-                            types.append(type)
+                        let card = Card(id: id, name: name, templateID: templateID)
+                        if !names.contains(name){
+                            names.append(name)
                         }
                         cards.append(card)
                     }
@@ -54,9 +55,9 @@ class CardDataSource {
     // MARK:- FruitsForEachGroup
     
     func cardsInType(index: Int) -> [Card] {
-        let item = types[index]
+        let item = names[index]
         let filteredCards = cards.filter { (card: Card) -> Bool in
-            return card.type == item
+            return card.name == item
         }
         return filteredCards
     }
@@ -65,7 +66,7 @@ class CardDataSource {
     
     func addAndGetIndexForNewItem() -> Int {
         
-        let card = Card(templateID: "99", type: "Blame")
+        let card = Card(id: "12", name: "99", templateID: "Blame")
         
         let count = cardsInType(0).count
         
