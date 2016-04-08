@@ -25,7 +25,6 @@ class ReceivedMessageViewController: UIViewController {
     @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var label3: UILabel!
     
-    var viaSegue = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +32,7 @@ class ReceivedMessageViewController: UIViewController {
         label1.text = labeltext1
         label3.text = labeltext2
         label2.text = labeltext3
-//        receivedCardView.image = UIImage(named: card!.templateID!.lowercaseString)
+        receivedCardView.image = UIImage(named: card!.templateID!.lowercaseString)
         // Do any additional setup after loading the view, typically from a nib.
     }
     

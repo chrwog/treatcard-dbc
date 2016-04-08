@@ -176,8 +176,8 @@ class ReceivedViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "SendCardDetails" {
-            if let dvc = segue.destinationViewController as? SingleCardDetailsViewController {
+        if segue.identifier == "ReceivedCardDetails" {
+            if let dvc = segue.destinationViewController as? ReceivedMessageViewController {
                 
                 let path = tableView.indexPathForSelectedRow
                 let cell = tableView.cellForRowAtIndexPath(path!)
@@ -188,11 +188,11 @@ class ReceivedViewController: UIViewController, UITableViewDataSource, UITableVi
                 
                 // Data from rails? Or data from Sender
                 let card = Card(id: "1", name: "hey", templateID: "1")
-                //                var cards = self.cards
+//                var cards = self.cards
                 dvc.card = card
                 
                 dvc.navigationItem.title? = (card.name?.capitalizedString)!
-                dvc.cardView?.image? = UIImage(named: card.templateID!.lowercaseString)!
+                dvc.receivedCardView?.image? = UIImage(named: card.templateID!.lowercaseString)!
                 print(cell)
                 dvc.labeltext2 = "From: David"
                 dvc.labeltext1 = "To: JP"
