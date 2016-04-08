@@ -17,7 +17,10 @@ class SentViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var searchBar: UISearchBar!
     
-    var cards = [tempCard]()
+    var card: Card?
+    
+    var cards = [UserCard]()
+    
     let cardDataSource = CardDataSource()
     
     
@@ -36,11 +39,11 @@ class SentViewController: UIViewController, UITableViewDataSource, UITableViewDe
                     let message = String(json[i]["message"])
                     let occasion = String(json[i]["occasion"])
                     
-                    let card = tempCard(id: id, to: to, from: from, greeting: greeting, message: message,
+                    let card = UserCard(id: id, to: to, from: from, greeting: greeting, message: message,
                                         occasion: occasion)
                     print("**********")
                     self.cards.append(card)
-                    print(i)
+                    print("Card: #\(i)")
                     print("to: \(json[i]["to"].string!)")
                     print("from: \(json[i]["from"].string!)")
                     print("greeting: \(json[i]["greeting"].string!)")
@@ -70,16 +73,29 @@ class SentViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "SendCardDetails" {
-            if let destination = segue.destinationViewController as? SingleCardDetailsViewController {
+            if let dvc = segue.destinationViewController as? SingleCardDetailsViewController {
                 
                 let path = tableView.indexPathForSelectedRow
                 let cell = tableView.cellForRowAtIndexPath(path!)
                 
 //                navigationItem.title = card!.type?.capitalizedString
 //                cell.imageView.image = UIImage(named: templateID.lowercaseString)
-                destination.viaSegue = (cell?.textLabel?.text!)!
-                print(destination)
+
+                
+                // Data from rails? Or data from Sender
+                let card = Card(id: "1", name: "hey", templateID: "1")
+//                var cards = self.cards
+                dvc.card = card
+                
+                dvc.navigationItem.title? = (card.name?.capitalizedString)!
+                dvc.cardView?.image? = UIImage(named: card.templateID!.lowercaseString)!
                 print(cell)
+                dvc.labeltext2 = "From: David"
+                dvc.labeltext1 = "To: JP"
+                dvc.labeltext3 = "Get Well Soon"
+                
+//                dvc.labeltext1.text = cards[indexPath.row].message
+//                dvc.labeltext2.text = "To: \(recipientName)"
             }
         }
     }

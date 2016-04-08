@@ -8,7 +8,17 @@
 
 import UIKit
 
+
 class SingleCardDetailsViewController: UIViewController {
+    
+    var card: Card?
+    
+    var cards = [UserCard]()
+    var labeltext1 = String()
+    var labeltext2 = String()
+    var labeltext3 = String()
+    
+    let cardDataSource = CardDataSource()
     
     @IBOutlet weak var cardView: UIImageView!
     @IBOutlet weak var label1: UILabel!
@@ -20,7 +30,10 @@ class SingleCardDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        label1.text = viaSegue
+        label1.text = labeltext1
+        label3.text = labeltext2
+        label2.text = labeltext3
+        cardView.image = UIImage(named: card!.templateID!.lowercaseString)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
