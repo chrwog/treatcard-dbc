@@ -77,7 +77,7 @@ class PersonalizeViewController: UIViewController, CNContactPickerDelegate  {
 
         // This session shows template image and set the title of the personalize view
         
-        navigationItem.title = card!.type?.capitalizedString
+        navigationItem.title = card!.name?.capitalizedString
         selectedImage.image = UIImage(named: card!.templateID!.lowercaseString)
         
         

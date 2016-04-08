@@ -7,11 +7,13 @@
 //
 
 class Card {
-    var templateID:String?
-    var type:String?
+    var id: String?
+    var name: String?
+    var templateID: String?
     
-    init(templateID: String, type: String) {
+    init(id: String, name: String, templateID: String) {
+        self.id = id
+        self.name = name
         self.templateID = templateID
-        self.type = type
     }
 }

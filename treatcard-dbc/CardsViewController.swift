@@ -69,7 +69,7 @@ class CardsViewController: UIViewController {
     extension CardsViewController : UICollectionViewDataSource {
         
         func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-            return cardDataSource.types.count
+            return cardDataSource.names.count
         }
         
         func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
