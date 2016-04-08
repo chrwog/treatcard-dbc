@@ -917,16 +917,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i57-r7-WCl">
-                                <rect key="frame" x="67" y="270" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="treatqr.png" translatesAutoresizingMaskIntoConstraints="NO" id="i57-r7-WCl">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i57-r7-WCl" firstAttribute="bottom" secondItem="Y0s-R6-aR3" secondAttribute="top" id="CR4-98-bNc"/>
+                            <constraint firstItem="i57-r7-WCl" firstAttribute="top" secondItem="djN-vf-G7U" secondAttribute="bottom" id="EMc-l8-CT9"/>
+                            <constraint firstAttribute="trailing" secondItem="i57-r7-WCl" secondAttribute="trailing" id="NBG-AS-smV"/>
+                            <constraint firstItem="i57-r7-WCl" firstAttribute="leading" secondItem="Cpu-F3-Vm7" secondAttribute="leading" id="xsK-is-Fhc"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="22i-Qo-5dD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2472" y="-1757"/>
+            <point key="canvasLocation" x="2471.5" y="-1757.5"/>
         </scene>
         <!--AddNote-->
         <scene sceneID="f3E-X0-hsP">
@@ -1202,6 +1208,7 @@
         <image name="icons_sent" width="16" height="12"/>
         <image name="icons_settings" width="15" height="14"/>
         <image name="login.png" width="560" height="88"/>
+        <image name="treatqr.png" width="640" height="911"/>
         <image name="treatsplash" width="374" height="563"/>
     </resources>
     <inferredMetricsTieBreakers>

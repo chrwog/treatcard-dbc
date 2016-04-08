@@ -19,7 +19,6 @@
 		4252E2D41CB0905800F0319A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4252E2D31CB0905800F0319A /* SettingsViewController.swift */; };
 		4273DC1C1CB582E0006E066F /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4273DC1B1CB582E0006E066F /* categories.plist */; };
 		4273DC1E1CB583A6006E066F /* categories.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4273DC1D1CB583A6006E066F /* categories.xcassets */; };
-		42768AAA1CB70A720020032D /* Screen Shot 2016-04-07 at 2.34.20 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 42768AA91CB70A720020032D /* Screen Shot 2016-04-07 at 2.34.20 PM.png */; };
 		428C25081CB4B24F00137C57 /* cover5.png in Resources */ = {isa = PBXBuildFile; fileRef = 428C25031CB4B24F00137C57 /* cover5.png */; };
 		428C25091CB4B24F00137C57 /* cover4.png in Resources */ = {isa = PBXBuildFile; fileRef = 428C25041CB4B24F00137C57 /* cover4.png */; };
 		428C250A1CB4B24F00137C57 /* cover1.png in Resources */ = {isa = PBXBuildFile; fileRef = 428C25051CB4B24F00137C57 /* cover1.png */; };
@@ -90,7 +89,7 @@
 		42B179E31CB194C500D3E79A /* ReceivedTreatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B179E21CB194C500D3E79A /* ReceivedTreatViewController.swift */; };
 		42EC5E661CB728E200EA6977 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EC5E651CB728E200EA6977 /* login.png */; };
 		42EC5E681CB72A0B00EA6977 /* treats.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42EC5E671CB72A0B00EA6977 /* treats.xcassets */; };
-		42EC5E6C1CB72E5500EA6977 /* screen_26_treat_page_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EC5E6B1CB72E5500EA6977 /* screen_26_treat_page_02.png */; };
+		42EC5E6E1CB7325300EA6977 /* treatqr.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EC5E6D1CB7325300EA6977 /* treatqr.png */; };
 		868DD1FE1CB0B51200F45B61 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868DD1FD1CB0B51200F45B61 /* RegisterViewController.swift */; };
 		868DD2001CB0B69000F45B61 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868DD1FF1CB0B69000F45B61 /* loginViewController.swift */; };
 		868DD2021CB0B9D700F45B61 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 868DD2011CB0B9D700F45B61 /* Podfile */; };
@@ -139,7 +138,6 @@
 		4252E2D31CB0905800F0319A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		4273DC1B1CB582E0006E066F /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
 		4273DC1D1CB583A6006E066F /* categories.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = categories.xcassets; sourceTree = "<group>"; };
-		42768AA91CB70A720020032D /* Screen Shot 2016-04-07 at 2.34.20 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2016-04-07 at 2.34.20 PM.png"; sourceTree = "<group>"; };
 		428C25031CB4B24F00137C57 /* cover5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover5.png; sourceTree = "<group>"; };
 		428C25041CB4B24F00137C57 /* cover4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover4.png; sourceTree = "<group>"; };
 		428C25051CB4B24F00137C57 /* cover1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover1.png; sourceTree = "<group>"; };
@@ -210,7 +208,7 @@
 		42B179E21CB194C500D3E79A /* ReceivedTreatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivedTreatViewController.swift; sourceTree = "<group>"; };
 		42EC5E651CB728E200EA6977 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
 		42EC5E671CB72A0B00EA6977 /* treats.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = treats.xcassets; sourceTree = "<group>"; };
-		42EC5E6B1CB72E5500EA6977 /* screen_26_treat_page_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen_26_treat_page_02.png; sourceTree = "<group>"; };
+		42EC5E6D1CB7325300EA6977 /* treatqr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treatqr.png; sourceTree = "<group>"; };
 		4A07ED0534983DD5736C3138 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		868DD1FD1CB0B51200F45B61 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		868DD1FF1CB0B69000F45B61 /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
@@ -324,8 +322,7 @@
 		428C250E1CB4B25E00137C57 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				42768AA91CB70A720020032D /* Screen Shot 2016-04-07 at 2.34.20 PM.png */,
-				42EC5E6B1CB72E5500EA6977 /* screen_26_treat_page_02.png */,
+				42EC5E6D1CB7325300EA6977 /* treatqr.png */,
 				42EC5E651CB728E200EA6977 /* login.png */,
 				428C250D1CB4B25700137C57 /* Card Decoration */,
 			);
@@ -650,7 +647,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42768AAA1CB70A720020032D /* Screen Shot 2016-04-07 at 2.34.20 PM.png in Resources */,
 				428C25501CB4B32A00137C57 /* template25.png in Resources */,
 				428C255E1CB4B32A00137C57 /* template39.png in Resources */,
 				428C254D1CB4B32A00137C57 /* template22.png in Resources */,
@@ -659,7 +655,6 @@
 				428C25441CB4B32A00137C57 /* template13.png in Resources */,
 				4252E2AE1CB0836900F0319A /* LaunchScreen.storyboard in Resources */,
 				428C254B1CB4B32A00137C57 /* template20.png in Resources */,
-				42EC5E6C1CB72E5500EA6977 /* screen_26_treat_page_02.png in Resources */,
 				428C25411CB4B32A00137C57 /* template10.png in Resources */,
 				4273DC1E1CB583A6006E066F /* categories.xcassets in Resources */,
 				428C25571CB4B32A00137C57 /* template32.png in Resources */,
@@ -683,6 +678,7 @@
 				428C255F1CB4B32A00137C57 /* template40.png in Resources */,
 				428C25171CB4B2FC00137C57 /* template8.png in Resources */,
 				428C25531CB4B32A00137C57 /* template28.png in Resources */,
+				42EC5E6E1CB7325300EA6977 /* treatqr.png in Resources */,
 				428C25481CB4B32A00137C57 /* template17.png in Resources */,
 				428C25581CB4B32A00137C57 /* template33.png in Resources */,
 				428C254C1CB4B32A00137C57 /* template21.png in Resources */,
